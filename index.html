@@ -117,7 +117,6 @@
             margin: auto;
         }
 
-        /* PWA Install Button */
         .install-pwa-btn {
             background: #00B14F;
             border: none;
@@ -136,7 +135,6 @@
             background: #008f3e;
         }
 
-        /* Image Upload Styles */
         .image-upload-area {
             border: 2px dashed rgba(0, 177, 79, 0.5);
             border-radius: 12px;
@@ -190,7 +188,6 @@
             font-size: 10px;
         }
 
-        /* THEME TOGGLE */
         .theme-toggle, .lang-toggle, .admin-btn, .promo-manage-btn, .customer-dashboard-btn {
             background: rgba(255,255,255,0.1);
             border: none;
@@ -232,7 +229,6 @@
             transform: translateY(-1px);
         }
 
-        /* NAVBAR */
         nav {
             display: flex;
             justify-content: space-between;
@@ -318,7 +314,6 @@
             background: #1a1a2e;
         }
 
-        /* HERO SECTION */
         .hero {
             min-height: 80vh;
             display: flex;
@@ -432,7 +427,6 @@
             transform: translateY(-2px);
         }
 
-        /* SECTIONS */
         .services, .booking-section, .payments, .steps, .history-section, .dashboard-section, .customer-dashboard-section {
             padding: 70px 0;
         }
@@ -515,7 +509,6 @@
             color: white;
         }
 
-        /* CUSTOMER DASHBOARD STYLES */
         .customer-dashboard-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -593,7 +586,6 @@
             font-size: 12px;
         }
 
-        /* Admin Dashboard Styles */
         .dashboard-stats {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -705,7 +697,6 @@
             flex-wrap: wrap;
         }
 
-        /* RATING STARS */
         .rating {
             display: flex;
             gap: 5px;
@@ -730,7 +721,6 @@
             resize: vertical;
         }
 
-        /* BANK INFO */
         .bank-info-container {
             display: flex;
             flex-direction: column;
@@ -756,7 +746,6 @@
         .bank-account { font-family: monospace; font-size: 15px; color: #00B14F; }
         .bank-holder { color: #a3b1cc; font-size: 12px; }
 
-        /* FORM */
         .form-group {
             display: flex;
             flex-direction: column;
@@ -838,7 +827,6 @@
             color: #FFD700;
         }
 
-        /* STATUS TRACKING */
         .status-tracking {
             background: linear-gradient(135deg, #0f172a 0%, #1a2335 100%);
             border-radius: 20px;
@@ -895,7 +883,6 @@
             border-color: #00B14F;
         }
 
-        /* FAVORITE ADDRESSES */
         .favorite-addresses {
             display: flex;
             gap: 10px;
@@ -918,7 +905,6 @@
             color: white;
         }
 
-        /* HISTORY */
         .history-list {
             max-height: 400px;
             overflow-y: auto;
@@ -945,20 +931,6 @@
             margin-top: 5px;
         }
 
-        .history-images {
-            display: flex;
-            gap: 5px;
-            margin-top: 10px;
-        }
-
-        .history-images img {
-            width: 40px;
-            height: 40px;
-            border-radius: 6px;
-            object-fit: cover;
-        }
-
-        /* STEPS */
         .step-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -989,7 +961,6 @@
             box-shadow: 0 0 15px rgba(0, 177, 79, 0.3);
         }
 
-        /* FOOTER */
         footer {
             text-align: center;
             padding: 50px 20px;
@@ -997,7 +968,6 @@
             background: #070a12;
         }
 
-        /* MODAL */
         .contact-modal, .admin-modal, .promo-modal, .customer-modal {
             position: fixed;
             top: 0;
@@ -1054,7 +1024,6 @@
             cursor: pointer;
         }
 
-        /* NOTIFICATION */
         .notification {
             position: fixed;
             top: 20px;
@@ -1079,7 +1048,6 @@
             }
         }
 
-        /* EMERGENCY BUTTON */
         .emergency-btn {
             position: fixed;
             bottom: 30px;
@@ -1134,10 +1102,31 @@
             gap: 15px;
         }
 
-        /* PROMO SLIDER STYLES */
         .promo-slider-container {
             margin: 20px 0;
             position: relative;
+        }
+
+        .promo-section-title {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .promo-section-title h4 {
+            font-size: 14px;
+            color: #FFD700;
+        }
+
+        .view-all-promo {
+            font-size: 12px;
+            color: #00B14F;
+            cursor: pointer;
+        }
+
+        .view-all-promo:hover {
+            text-decoration: underline;
         }
 
         .promo-slider {
@@ -1173,6 +1162,35 @@
             box-shadow: 0 10px 30px rgba(0, 177, 79, 0.2);
         }
 
+        .promo-slider-card .promo-badge {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .promo-slider-card .promo-code {
+            font-weight: bold;
+            font-size: 18px;
+            color: #FFD700;
+            margin-bottom: 5px;
+        }
+
+        .promo-slider-card .promo-discount {
+            font-size: 14px;
+            color: #00B14F;
+            margin-bottom: 10px;
+        }
+
+        .promo-slider-card .promo-desc {
+            font-size: 11px;
+            color: #a3b1cc;
+            margin-bottom: 5px;
+        }
+
+        .promo-slider-card .promo-expiry {
+            font-size: 10px;
+            color: #ff6b6b;
+        }
+
         .slider-nav {
             display: flex;
             justify-content: center;
@@ -1197,6 +1215,39 @@
         .slider-nav-btn:hover {
             background: #00B14F;
             transform: scale(1.1);
+        }
+
+        .social-links-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .social-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 12px;
+            border-radius: 50px;
+            text-decoration: none;
+            color: white;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .btn-instagram {
+            background: linear-gradient(45deg, #f09433, #d62976, #962fbf);
+        }
+
+        .btn-whatsapp-modal {
+            background: #25D366;
+        }
+
+        .social-btn:hover {
+            transform: translateY(-2px);
+            opacity: 0.9;
         }
 
         @media(max-width: 991px) {
@@ -1269,44 +1320,44 @@
         </button>
 
         <div class="menu" id="navMenu">
-            <a href="#">Home</a>
-            <a href="#layanan">Layanan</a>
-            <a href="#form-pemesanan">Pesan</a>
-            <a href="#fitur-pembayaran">Fitur Pembayaran</a>
-            <a href="#cara-pesan">Cara Pesan</a>
-            <a href="#history">Riwayat</a>
-            <a href="#customer-dashboard" id="customerDashboardMenuLink">👤 Dashboard Saya</a>
-            <a href="#dashboard" id="dashboardMenuLink" style="display: none;">📊 Admin</a>
-            <a onclick="openContactModal()">Kontak</a>
+            <a href="#" data-key="navHome">Home</a>
+            <a href="#layanan" data-key="navServices">Layanan</a>
+            <a href="#form-pemesanan" data-key="navBook">Pesan</a>
+            <a href="#fitur-pembayaran" data-key="navPayment">Fitur Pembayaran</a>
+            <a href="#cara-pesan" data-key="navHowToBook">Cara Pesan</a>
+            <a href="#history" data-key="navHistory">Riwayat</a>
+            <a href="#customer-dashboard" id="customerDashboardMenuLink" data-key="navMyDashboard">👤 Dashboard Saya</a>
+            <a href="#dashboard" id="dashboardMenuLink" style="display: none;" data-key="navAdmin">📊 Admin</a>
+            <a onclick="openContactModal()" data-key="navContact">Kontak</a>
         </div>
         
         <div class="nav-controls">
             <button class="lang-toggle" onclick="toggleLanguage()" id="langToggleBtn">🇮🇩 ID</button>
-            <button class="theme-toggle" onclick="toggleTheme()">🌓 Mode</button>
-            <button class="customer-dashboard-btn" onclick="openCustomerDashboard()">👤 Dashboard Saya</button>
-            <button class="admin-btn" onclick="openAdminModal()">🔒 Admin</button>
-            <button class="promo-manage-btn" onclick="openPromoAdminPanel()" id="promoManageBtn" style="display: none;">🎫 Kelola Promo</button>
-            <button id="installPwaBtn" class="install-pwa-btn" style="display: none;"><i class="fa-solid fa-download"></i> Install App</button>
+            <button class="theme-toggle" onclick="toggleTheme()" data-key="themeToggle">🌓 Mode</button>
+            <button class="customer-dashboard-btn" onclick="openCustomerDashboard()" data-key="myDashboard">👤 Dashboard Saya</button>
+            <button class="admin-btn" onclick="openAdminModal()" data-key="adminBtn">🔒 Admin</button>
+            <button class="promo-manage-btn" onclick="openPromoAdminPanel()" id="promoManageBtn" style="display: none;" data-key="managePromo">🎫 Kelola Promo</button>
+            <button id="installPwaBtn" class="install-pwa-btn" style="display: none;"><i class="fa-solid fa-download"></i> <span data-key="installApp">Install App</span></button>
             <a href="https://wa.me/6281260636666" class="whatsapp-btn">WhatsApp</a>
         </div>
     </nav>
 
     <section class="hero">
         <div class="hero-left">
-            <div class="badge" id="heroBadge">🚖 JASA BOOKING ONLINE TERPERCAYA</div>
-            <h1 id="heroTitle"><span>JASA ALIONG</span><br>Melayani Pemesanan Online</h1>
-            <p id="heroDesc">Solusi cepat dan aman untuk berbagai kebutuhan perjalanan, jastip, belanja, dan logistik Anda.</p>
+            <div class="badge" id="heroBadge" data-key="heroBadge">🚖 JASA BOOKING ONLINE TERPERCAYA</div>
+            <h1 id="heroTitle"><span>JASA ALIONG</span><br><span data-key="heroTitle">Melayani Pemesanan Online</span></h1>
+            <p id="heroDesc" data-key="heroDesc">Solusi cepat dan aman untuk berbagai kebutuhan perjalanan, jastip, belanja, dan logistik Anda.</p>
             <div class="features">
-                <div class="feature">⚡ Respon Cepat</div>
-                <div class="feature">🚗 Driver Terpercaya</div>
-                <div class="feature">📱 Booking Mudah</div>
-                <div class="feature">💰 Harga Transparan</div>
-                <div class="feature">🎟️ Promo Spesial</div>
-                <div class="feature">🌦️ Tarif Dinamis</div>
+                <div class="feature" data-key="feature1">⚡ Respon Cepat</div>
+                <div class="feature" data-key="feature2">🚗 Driver Terpercaya</div>
+                <div class="feature" data-key="feature3">📱 Booking Mudah</div>
+                <div class="feature" data-key="feature4">💰 Harga Transparan</div>
+                <div class="feature" data-key="feature5">🎟️ Promo Spesial</div>
+                <div class="feature" data-key="feature6">🌦️ Tarif Dinamis</div>
             </div>
             <div class="buttons">
-                <a href="#form-pemesanan" class="btn-primary" id="btnBookNow">📝 Pesan via Formulir</a>
-                <a href="#layanan" class="btn-secondary" id="btnViewServices">👁️ Lihat Layanan</a>
+                <a href="#form-pemesanan" class="btn-primary" id="btnBookNow" data-key="bookNowBtn">📝 Pesan via Formulir</a>
+                <a href="#layanan" class="btn-secondary" id="btnViewServices" data-key="viewServicesBtn">👁️ Lihat Layanan</a>
             </div>
         </div>
         <div class="hero-right">
@@ -1318,29 +1369,29 @@
 <!-- STATUS TRACKING SECTION -->
 <section id="status-tracking" class="services" style="padding-top: 0;">
     <div class="container">
-        <h2 class="section-title"><span id="trackingTitle">Live</span> <span id="trackingTitleHighlight">Tracking</span></h2>
+        <h2 class="section-title"><span id="trackingTitle" data-key="trackingTitle">Live</span> <span id="trackingTitleHighlight" data-key="trackingTitleHighlight">Tracking</span></h2>
         <div class="status-tracking">
             <div id="orderIdDisplay" style="text-align: center; margin-bottom: 20px; font-size: 14px; color: #00B14F;"></div>
             <div class="status-steps" id="statusSteps">
                 <div class="status-step" data-step="0">
                     <div class="status-icon"><i class="fa-regular fa-clock"></i></div>
-                    <div class="status-label" id="step1Label">Menunggu Konfirmasi</div>
+                    <div class="status-label" id="step1Label" data-key="step1Label">Menunggu Konfirmasi</div>
                 </div>
                 <div class="status-step" data-step="1">
                     <div class="status-icon"><i class="fa-solid fa-car"></i></div>
-                    <div class="status-label" id="step2Label">Driver Menuju Lokasi</div>
+                    <div class="status-label" id="step2Label" data-key="step2Label">Driver Menuju Lokasi</div>
                 </div>
                 <div class="status-step" data-step="2">
                     <div class="status-icon"><i class="fa-solid fa-location-dot"></i></div>
-                    <div class="status-label" id="step3Label">Menjemput Penumpang</div>
+                    <div class="status-label" id="step3Label" data-key="step3Label">Menjemput Penumpang</div>
                 </div>
                 <div class="status-step" data-step="3">
                     <div class="status-icon"><i class="fa-solid fa-flag-checkered"></i></div>
-                    <div class="status-label" id="step4Label">Perjalanan Selesai</div>
+                    <div class="status-label" id="step4Label" data-key="step4Label">Perjalanan Selesai</div>
                 </div>
             </div>
             <div style="text-align: center; margin-top: 20px;">
-                <button class="btn-secondary" onclick="shareTrip()" id="shareTripBtn">🔗 Bagikan Perjalanan</button>
+                <button class="btn-secondary" onclick="shareTrip()" id="shareTripBtn" data-key="shareTripBtn">🔗 Bagikan Perjalanan</button>
             </div>
         </div>
     </div>
@@ -1349,35 +1400,35 @@
 <!-- MENU LAYANAN -->
 <section id="layanan" class="services">
     <div class="container">
-        <h2 class="section-title"><span id="servicesTitle">Layanan</span> <span id="servicesTitleHighlight">Kami</span></h2>
+        <h2 class="section-title"><span id="servicesTitle" data-key="servicesTitle">Layanan</span> <span id="servicesTitleHighlight" data-key="servicesTitleHighlight">Kami</span></h2>
         <div class="cards">
             <div class="card">
                 <div>
                     <h3>🚗 GrabCar</h3>
-                    <p id="service1Desc">Perjalanan nyaman untuk individu dan keluarga dengan armada mobil terbaik.</p>
+                    <p id="service1Desc" data-key="service1Desc">Perjalanan nyaman untuk individu dan keluarga dengan armada mobil terbaik.</p>
                 </div>
-                <a href="#form-pemesanan" onclick="setJenisLayanan('GrabCar')" class="card-btn" id="service1Btn">Pesan Sekarang</a>
+                <a href="#form-pemesanan" onclick="setJenisLayanan('GrabCar')" class="card-btn" id="service1Btn" data-key="service1Btn">Pesan Sekarang</a>
             </div>
             <div class="card">
                 <div>
                     <h3>📦 GoSend</h3>
-                    <p id="service2Desc">Pengiriman paket dan dokumen kilat, aman, dan tepercaya.</p>
+                    <p id="service2Desc" data-key="service2Desc">Pengiriman paket dan dokumen kilat, aman, dan tepercaya.</p>
                 </div>
-                <a href="#form-pemesanan" onclick="setJenisLayanan('GoSend')" class="card-btn" id="service2Btn">Kirim Barang</a>
+                <a href="#form-pemesanan" onclick="setJenisLayanan('GoSend')" class="card-btn" id="service2Btn" data-key="service2Btn">Kirim Barang</a>
             </div>
             <div class="card">
                 <div>
                     <h3>🍔 GoFood</h3>
-                    <p id="service3Desc">Jasa titip beli makanan dan minuman favorit Anda.</p>
+                    <p id="service3Desc" data-key="service3Desc">Jasa titip beli makanan dan minuman favorit Anda.</p>
                 </div>
-                <a href="#form-pemesanan" onclick="setJenisLayanan('GoFood')" class="card-btn" id="service3Btn">Titip Makan</a>
+                <a href="#form-pemesanan" onclick="setJenisLayanan('GoFood')" class="card-btn" id="service3Btn" data-key="service3Btn">Titip Makan</a>
             </div>
             <div class="card">
                 <div>
                     <h3>🛍️ Jastip</h3>
-                    <p id="service4Desc">Jasa titip beli barang dengan biaya per item Rp 10.000.</p>
+                    <p id="service4Desc" data-key="service4Desc">Jasa titip beli barang dengan biaya per item Rp 10.000.</p>
                 </div>
-                <a href="#form-pemesanan" onclick="setJenisLayanan('Jastip')" class="card-btn" id="service4Btn">Titip Belanja</a>
+                <a href="#form-pemesanan" onclick="setJenisLayanan('Jastip')" class="card-btn" id="service4Btn" data-key="service4Btn">Titip Belanja</a>
             </div>
         </div>
     </div>
@@ -1386,30 +1437,28 @@
 <!-- FORMULIR PEMESANAN -->
 <section id="form-pemesanan" class="booking-section">
     <div class="container">
-        <h2 class="section-title"><span id="formTitle">Formulir</span> <span id="formTitleHighlight">Pemesanan</span></h2>
+        <h2 class="section-title"><span id="formTitle" data-key="formTitle">Formulir</span> <span id="formTitleHighlight" data-key="formTitleHighlight">Pemesanan</span></h2>
         
         <div style="max-width: 600px; margin: 0 auto; background: #0f172a; padding: 25px; border-radius: 20px; border: 1px solid rgba(0, 177, 79, 0.3); display: flex; flex-direction: column; gap: 25px;">
             
-            <!-- MULTIPLIER INFO BOX (Dynamic Pricing) -->
             <div class="multiplier-info-box" id="multiplierInfoBox">
-                <span><i class="fa-solid fa-chart-line"></i> <span id="multiplierLabel">Tarif Normal</span></span>
+                <span><i class="fa-solid fa-chart-line"></i> <span id="multiplierLabel" data-key="multiplierLabel">Tarif Normal</span></span>
                 <span class="multiplier-badge" id="multiplierBadge">x1.00</span>
                 <span id="multiplierReason" style="font-size: 11px;"></span>
             </div>
 
             <div>
-                <h4 style="margin-bottom: 10px; font-size: 14px;"><i class="fa-regular fa-heart"></i> <span id="favAddressTitle">Alamat Favorit</span></h4>
+                <h4 style="margin-bottom: 10px; font-size: 14px;"><i class="fa-regular fa-heart"></i> <span id="favAddressTitle" data-key="favAddressTitle">Alamat Favorit</span></h4>
                 <div class="favorite-addresses" id="favoriteAddresses"></div>
             </div>
 
-            <!-- PROMO SLIDER SECTION -->
             <div class="promo-slider-container">
                 <div class="promo-section-title">
-                    <h4><i class="fa-solid fa-ticket"></i> 🎉 Promo Spesial untuk Anda!</h4>
-                    <span class="view-all-promo" onclick="openPromoModal()">Lihat Semua <i class="fa-solid fa-arrow-right"></i></span>
+                    <h4><i class="fa-solid fa-ticket"></i> <span data-key="specialPromo">🎉 Promo Spesial untuk Anda!</span></h4>
+                    <span class="view-all-promo" onclick="openPromoModal()" data-key="viewAllPromo">Lihat Semua <i class="fa-solid fa-arrow-right"></i></span>
                 </div>
                 <div class="promo-slider" id="promoSlider">
-                    <div style="text-align: center; width: 100%; padding: 20px;">Loading promo...</div>
+                    <div style="text-align: center; width: 100%; padding: 20px;" data-key="loadingPromo">Loading promo...</div>
                 </div>
                 <div class="slider-nav">
                     <button class="slider-nav-btn" onclick="scrollPromoSlider(-1)"><i class="fa-solid fa-chevron-left"></i></button>
@@ -1419,14 +1468,14 @@
 
             <form id="bookingForm" style="display: flex; flex-direction: column; gap: 20px;">
                 <div class="form-group">
-                    <label id="labelNama">Nama Pelanggan / Penumpang</label>
+                    <label id="labelNama" data-key="labelNama">Nama Pelanggan / Penumpang</label>
                     <input type="text" id="nama" required placeholder="Masukkan nama lengkap">
                 </div>
 
                 <div class="form-group">
-                    <label id="labelJenisLayanan">Pilih Jenis Layanan</label>
+                    <label id="labelJenisLayanan" data-key="labelJenisLayanan">Pilih Jenis Layanan</label>
                     <select id="jenisLayanan" required>
-                        <option value="" disabled selected>-- Pilih Layanan --</option>
+                        <option value="" disabled selected data-key="selectServiceOption">-- Pilih Layanan --</option>
                         <option value="GrabCar">🚗 GrabCar (Mobil Standar)</option>
                         <option value="GoSend">📦 GoSend (Kirim Paket/Barang)</option>
                         <option value="GoFood">🍔 GoFood (Titip Beli Makanan)</option>
@@ -1436,25 +1485,25 @@
 
                 <div id="gosendFields" class="gosend-extra-box">
                     <div class="form-group">
-                        <label id="labelNamaBarang" style="color:#00B14F;"><i class="fa-solid fa-box"></i> Nama Barang</label>
+                        <label id="labelNamaBarang" style="color:#00B14F;"><i class="fa-solid fa-box"></i> <span data-key="itemName">Nama Barang</span></label>
                         <input type="text" id="namaBarang" placeholder="Contoh: Pakaian, Dokumen">
                     </div>
                     <div class="gosend-grid">
                         <div class="form-group">
-                            <label><i class="fa-solid fa-weight-hanging"></i> Estimasi Berat (Kg)</label>
+                            <label><i class="fa-solid fa-weight-hanging"></i> <span data-key="estWeight">Estimasi Berat (Kg)</span></label>
                             <input type="number" id="beratBarang" min="1" placeholder="Kg">
                         </div>
                         <div class="form-group">
-                            <label><i class="fa-solid fa-layer-group"></i> Jumlah Barang</label>
+                            <label><i class="fa-solid fa-layer-group"></i> <span data-key="itemQty">Jumlah Barang</span></label>
                             <input type="number" id="jumlahBarang" min="1" placeholder="Jumlah">
                         </div>
                     </div>
                     
                     <div class="form-group">
-                        <label><i class="fa-solid fa-camera"></i> Upload Foto Barang (Opsional)</label>
+                        <label><i class="fa-solid fa-camera"></i> <span data-key="uploadPhoto">Upload Foto Barang (Opsional)</span></label>
                         <div class="image-upload-area" id="imageUploadArea">
                             <i class="fa-solid fa-cloud-upload-alt" style="font-size: 24px;"></i>
-                            <p style="margin-top: 5px; font-size: 12px;">Klik atau tap untuk upload foto barang</p>
+                            <p style="margin-top: 5px; font-size: 12px;" data-key="clickToUpload">Klik atau tap untuk upload foto barang</p>
                             <input type="file" id="imageUpload" accept="image/*" multiple style="display: none;">
                         </div>
                         <div class="image-preview" id="imagePreview"></div>
@@ -1462,27 +1511,27 @@
                 </div>
 
                 <div class="form-group">
-                    <label id="labelJemput">Lokasi Penjemputan / Pengambilan</label>
+                    <label id="labelJemput" data-key="pickupLocation">Lokasi Penjemputan / Pengambilan</label>
                     <input type="text" id="jemput" required placeholder="Ketik alamat lengkap">
                 </div>
 
                 <div class="form-group">
-                    <label id="labelTujuan">Lokasi Tujuan / Pengantaran</label>
+                    <label id="labelTujuan" data-key="destinationLocation">Lokasi Tujuan / Pengantaran</label>
                     <input type="text" id="tujuan" required placeholder="Ketik alamat lengkap">
                     
                     <div class="manual-distance-input">
                         <input type="number" id="jarakManual" step="0.1" placeholder="Perkiraan jarak (KM)">
-                        <button type="button" class="btn-secondary calc-distance-btn" onclick="setManualDistance()">Hitung Tarif</button>
+                        <button type="button" class="btn-secondary calc-distance-btn" onclick="setManualDistance()" data-key="calcFareBtn">Hitung Tarif</button>
                     </div>
                     
                     <div id="liveTracker" class="live-tracker-box">
                         <div class="tracker-flex">
                             <div class="tracker-item">
-                                <div class="tracker-label">📍 Jarak Rute</div>
+                                <div class="tracker-label" data-key="routeDistance">📍 Jarak Rute</div>
                                 <div id="liveJarakText" class="tracker-value">0 KM</div>
                             </div>
                             <div class="tracker-item">
-                                <div class="tracker-label">💰 Estimasi Tarif</div>
+                                <div class="tracker-label" data-key="estFare">💰 Estimasi Tarif</div>
                                 <div id="liveTarifText" class="tracker-value price">Rp 0</div>
                             </div>
                         </div>
@@ -1491,17 +1540,17 @@
 
                 <div class="dateTime-grid">
                     <div class="form-group">
-                        <label id="labelTanggal">Tanggal Pelaksanaan</label>
+                        <label id="labelTanggal" data-key="dateLabel">Tanggal Pelaksanaan</label>
                         <input type="date" id="tanggalJemput" required>
                     </div>
                     <div class="form-group">
-                        <label id="labelJam">Jam Pelaksanaan</label>
+                        <label id="labelJam" data-key="timeLabel">Jam Pelaksanaan</label>
                         <input type="time" id="jamJemput" required>
                     </div>
                 </div>
 
                 <div class="form-group">
-                    <label id="labelRating">Rating untuk Driver Sebelumnya (Opsional)</label>
+                    <label id="labelRating" data-key="ratingLabel">Rating untuk Driver Sebelumnya (Opsional)</label>
                     <div class="rating" id="ratingStars">
                         <i class="fa-regular fa-star" data-rating="1"></i>
                         <i class="fa-regular fa-star" data-rating="2"></i>
@@ -1512,22 +1561,22 @@
                     <textarea id="reviewText" class="review-input" rows="3" placeholder="Tulis review Anda..."></textarea>
                 </div>
 
-                <button type="submit" class="btn-primary" id="submitBtn" style="padding: 14px; font-weight: 600; width:100%;">📤 Kirim Pesanan via WhatsApp</button>
+                <button type="submit" class="btn-primary" id="submitBtn" style="padding: 14px; font-weight: 600; width:100%;" data-key="submitBtn">📤 Kirim Pesanan via WhatsApp</button>
             </form>
 
             <hr>
 
             <div id="calculator-box" style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); padding: 15px; border-radius: 12px;">
-                <h4 style="margin-bottom: 15px; font-size: 15px; color: #FFD700;"><i class="fa-solid fa-calculator"></i> <span id="calculatorTitle">Kalkulator Tarif (Manual)</span></h4>
+                <h4 style="margin-bottom: 15px; font-size: 15px; color: #FFD700;"><i class="fa-solid fa-calculator"></i> <span id="calculatorTitle" data-key="calculatorTitle">Kalkulator Tarif (Manual)</span></h4>
                 <div class="form-group" style="margin-bottom: 15px;">
-                    <label id="labelJarakManual">Perkiraan Jarak Perjalanan (Kilometer)</label>
+                    <label id="labelJarakManual" data-key="distanceLabel">Perkiraan Jarak Perjalanan (Kilometer)</label>
                     <input type="number" id="inputJarak" min="1" step="0.1" placeholder="Contoh: 12">
                 </div>
-                <button type="button" onclick="hitungTarifManual()" class="btn-secondary" style="width: 100%; padding: 12px;">💰 Hitung Tarif Argo</button>
+                <button type="button" onclick="hitungTarifManual()" class="btn-secondary" style="width: 100%; padding: 12px;" data-key="calcFareManualBtn">💰 Hitung Tarif Argo</button>
                 <div id="hasilTarifBox" style="margin-top: 20px; padding: 15px; background: rgba(0, 177, 79, 0.1); border-radius: 10px; text-align: center; display: none;">
-                    <p style="font-size: 13px;">Estimasi Total Tarif Perjalanan:</p>
+                    <p style="font-size: 13px;" data-key="estTotalFare">Estimasi Total Tarif Perjalanan:</p>
                     <h3 id="textTotalTarif" style="font-size: 24px; color: #00B14F;">Rp 0</h3>
-                    <p style="font-size: 11px;">*Tarif dasar Rp 3.300 / km (dapat berubah sesuai jam dan cuaca)</p>
+                    <p style="font-size: 11px;" data-key="baseRateNote">*Tarif dasar Rp 3.300 / km (dapat berubah sesuai jam dan cuaca)</p>
                 </div>
             </div>
         </div>
@@ -1537,40 +1586,40 @@
 <!-- CUSTOMER DASHBOARD SECTION -->
 <section id="customer-dashboard" class="customer-dashboard-section">
     <div class="container">
-        <h2 class="section-title"><span>Dashboard</span> <span>Saya</span></h2>
+        <h2 class="section-title"><span data-key="dashboardTitle">Dashboard</span> <span data-key="myDashboardTitle">Saya</span></h2>
         
         <div class="customer-dashboard-grid">
             <div class="customer-dashboard-card">
-                <h3><i class="fa-solid fa-calendar-check"></i> Total Pesanan</h3>
+                <h3><i class="fa-solid fa-calendar-check"></i> <span data-key="totalOrdersLabel">Total Pesanan</span></h3>
                 <div class="value" id="customerTotalOrders">0</div>
-                <p style="font-size: 12px; margin-top: 10px; color: #a3b1cc;">Pesanan selesai</p>
+                <p style="font-size: 12px; margin-top: 10px; color: #a3b1cc;" data-key="completedOrdersLabel">Pesanan selesai</p>
             </div>
             
             <div class="customer-dashboard-card">
-                <h3><i class="fa-solid fa-coins"></i> Total Belanja</h3>
+                <h3><i class="fa-solid fa-coins"></i> <span data-key="totalSpentLabel">Total Belanja</span></h3>
                 <div class="value" id="customerTotalSpent">Rp 0</div>
-                <p style="font-size: 12px; margin-top: 10px; color: #a3b1cc;">Akumulasi transaksi</p>
+                <p style="font-size: 12px; margin-top: 10px; color: #a3b1cc;" data-key="accumulatedLabel">Akumulasi transaksi</p>
             </div>
             
             <div class="customer-dashboard-card">
-                <h3><i class="fa-solid fa-star"></i> Poin Reward</h3>
+                <h3><i class="fa-solid fa-star"></i> <span data-key="rewardPointsLabel">Poin Reward</span></h3>
                 <div class="value" id="customerPoints">0</div>
                 <div class="points-progress">
                     <div class="progress-bar">
                         <div class="progress-fill" id="pointsProgressFill" style="width: 0%"></div>
                     </div>
-                    <p style="font-size: 11px;" id="pointsNextReward">Tukar 100 poin = Rp 5.000</p>
+                    <p style="font-size: 11px;" id="pointsNextReward" data-key="pointsExchangeInfo">Tukar 100 poin = Rp 5.000</p>
                 </div>
             </div>
             
             <div class="customer-dashboard-card">
-                <h3><i class="fa-solid fa-ticket"></i> Promo Digunakan</h3>
+                <h3><i class="fa-solid fa-ticket"></i> <span data-key="promoUsedLabel">Promo Digunakan</span></h3>
                 <div class="value" id="customerPromoCount">0</div>
-                <p style="font-size: 12px; margin-top: 10px; color: #a3b1cc;">Total hemat: <span id="customerTotalSaving">Rp 0</span></p>
+                <p style="font-size: 12px; margin-top: 10px; color: #a3b1cc;"><span data-key="totalSavedLabel">Total hemat</span>: <span id="customerTotalSaving">Rp 0</span></p>
             </div>
         </div>
         
-        <h3 style="text-align: center; margin-bottom: 20px;">📊 Statistik Per Layanan</h3>
+        <h3 style="text-align: center; margin-bottom: 20px;" data-key="serviceStatsLabel">📊 Statistik Per Layanan</h3>
         <div class="service-stats" id="customerServiceStats">
             <div class="service-stat-card">
                 <div class="service-name">🚗 GrabCar</div>
@@ -1595,27 +1644,27 @@
         </div>
         
         <div style="text-align: center; margin-top: 20px;">
-            <button class="btn-primary" onclick="redeemPoints()">🎁 Tukar Poin</button>
-            <button class="btn-secondary" onclick="closeCustomerDashboard()" style="margin-left: 10px;">Tutup</button>
+            <button class="btn-primary" onclick="redeemPoints()" data-key="redeemPointsBtn">🎁 Tukar Poin</button>
+            <button class="btn-secondary" onclick="closeCustomerDashboard()" style="margin-left: 10px;" data-key="closeBtn">Tutup</button>
         </div>
     </div>
 </section>
 
 <section id="fitur-pembayaran" class="payments">
     <div class="container">
-        <h2 class="section-title"><span id="paymentTitle">Fitur</span> <span id="paymentTitleHighlight">Pembayaran</span></h2>
+        <h2 class="section-title"><span id="paymentTitle" data-key="paymentTitle">Fitur</span> <span id="paymentTitleHighlight" data-key="paymentTitleHighlight">Pembayaran</span></h2>
         <div class="cards">
             <div class="card">
                 <div>
-                    <h3><i class="fa-solid fa-money-bill-wave"></i> Tunai (Cash)</h3>
-                    <p>Bayar langsung dengan uang tunai kepada driver/kurir.</p>
+                    <h3><i class="fa-solid fa-money-bill-wave"></i> <span data-key="cashTitle">Tunai (Cash)</span></h3>
+                    <p data-key="cashDesc">Bayar langsung dengan uang tunai kepada driver/kurir.</p>
                 </div>
-                <a href="https://wa.me/6281260636666" class="card-btn">Info Lebih Lanjut</a>
+                <a href="https://wa.me/6281260636666" class="card-btn" data-key="moreInfoBtn">Info Lebih Lanjut</a>
             </div>
             <div class="card">
                 <div>
-                    <h3><i class="fa-solid fa-university"></i> Transfer Bank</h3>
-                    <p>Pembayaran non-tunai via Transfer Bank.</p>
+                    <h3><i class="fa-solid fa-university"></i> <span data-key="bankTransferTitle">Transfer Bank</span></h3>
+                    <p data-key="bankTransferDesc">Pembayaran non-tunai via Transfer Bank.</p>
                     <div class="bank-info-container">
                         <div class="bank-item">
                             <div class="bank-details">
@@ -1626,12 +1675,12 @@
                         </div>
                     </div>
                 </div>
-                <a href="https://wa.me/6281260636666" class="card-btn">Konfirmasi Transfer</a>
+                <a href="https://wa.me/6281260636666" class="card-btn" data-key="confirmTransferBtn">Konfirmasi Transfer</a>
             </div>
             <div class="card">
                 <div>
-                    <h3><i class="fa-solid fa-wallet"></i> E-Wallet</h3>
-                    <p>Pembayaran instan menggunakan GoPay.</p>
+                    <h3><i class="fa-solid fa-wallet"></i> <span data-key="ewalletTitle">E-Wallet</span></h3>
+                    <p data-key="ewalletDesc">Pembayaran instan menggunakan GoPay.</p>
                     <div class="bank-info-container">
                         <div class="bank-item">
                             <div class="bank-details">
@@ -1642,7 +1691,7 @@
                         </div>
                     </div>
                 </div>
-                <a href="https://wa.me/6281260636666" class="card-btn">Konfirmasi Transfer</a>
+                <a href="https://wa.me/6281260636666" class="card-btn" data-key="confirmTransferBtn">Konfirmasi Transfer</a>
             </div>
         </div>
     </div>
@@ -1651,28 +1700,28 @@
 <!-- ADMIN DASHBOARD SECTION -->
 <section id="dashboard" class="dashboard-section" style="display: none;">
     <div class="container">
-        <h2 class="section-title"><span>Dashboard</span> <span>Admin</span></h2>
+        <h2 class="section-title"><span data-key="adminDashboardTitle">Dashboard</span> <span data-key="adminLabel">Admin</span></h2>
         
         <div class="dashboard-stats">
             <div class="dashboard-card">
-                <h3>📊 Total Pesanan</h3>
+                <h3 data-key="totalOrdersLabel">📊 Total Pesanan</h3>
                 <div class="value" id="totalOrders">0</div>
             </div>
             <div class="dashboard-card">
-                <h3>💰 Total Pendapatan</h3>
+                <h3 data-key="totalRevenueLabel">💰 Total Pendapatan</h3>
                 <div class="value" id="totalRevenue">Rp 0</div>
             </div>
             <div class="dashboard-card">
-                <h3>📅 Pesanan Bulan Ini</h3>
+                <h3 data-key="monthlyOrdersLabel">📅 Pesanan Bulan Ini</h3>
                 <div class="value" id="monthlyOrders">0</div>
             </div>
             <div class="dashboard-card">
-                <h3>💵 Pendapatan Bulan Ini</h3>
+                <h3 data-key="monthlyRevenueLabel">💵 Pendapatan Bulan Ini</h3>
                 <div class="value" id="monthlyRevenue">Rp 0</div>
             </div>
         </div>
 
-        <h3 style="text-align: center; margin-bottom: 20px;">📈 Rekap Per Layanan</h3>
+        <h3 style="text-align: center; margin-bottom: 20px;" data-key="serviceSummaryLabel">📈 Rekap Per Layanan</h3>
         <div class="service-stats" id="serviceStats">
             <div class="service-stat-card">
                 <div class="service-name">🚗 GrabCar</div>
@@ -1704,24 +1753,24 @@
                 <option value="10">Oktober</option><option value="11">November</option><option value="12">Desember</option>
             </select>
             <input type="number" id="yearSelect" value="2026" style="width: 100px;">
-            <button class="btn-primary" onclick="filterReportByMonth()">Tampilkan</button>
+            <button class="btn-primary" onclick="filterReportByMonth()" data-key="showBtn">Tampilkan</button>
         </div>
 
         <div class="report-table">
             <table>
                 <thead>
-                    <tr><th>Tanggal</th><th>Pelanggan</th><th>Layanan</th><th>Jarak</th><th>Nominal</th><th>Promo</th><th>Rating</th></tr>
+                    <tr><th data-key="dateCol">Tanggal</th><th data-key="customerCol">Pelanggan</th><th data-key="serviceCol">Layanan</th><th data-key="distanceCol">Jarak</th><th data-key="amountCol">Nominal</th><th data-key="promoCol">Promo</th><th data-key="ratingCol">Rating</th></tr>
                 </thead>
                 <tbody id="reportTableBody">
-                    <tr><td colspan="7" style="text-align:center;">Loading...</td></tr>
+                    <tr><td colspan="7" style="text-align:center;" data-key="loadingData">Loading...</td></tr>
                 </tbody>
             </table>
         </div>
 
         <div class="export-buttons">
-            <button class="btn-primary" onclick="exportToCSV()">📎 Export CSV</button>
-            <button class="btn-secondary" onclick="exportToPDF()">📄 Export PDF</button>
-            <button class="btn-secondary" onclick="openPromoAdminPanel()">🎫 Kelola Promo</button>
+            <button class="btn-primary" onclick="exportToCSV()" data-key="exportCSVBtn">📎 Export CSV</button>
+            <button class="btn-secondary" onclick="exportToPDF()" data-key="exportPDFBtn">📄 Export PDF</button>
+            <button class="btn-secondary" onclick="openPromoAdminPanel()" data-key="managePromoBtn">🎫 Kelola Promo</button>
         </div>
     </div>
 </section>
@@ -1730,14 +1779,14 @@
 <div class="promo-modal" id="promoModal">
     <div class="promo-modal-content">
         <button class="close-modal" onclick="closePromoModal()"><i class="fa-solid fa-xmark"></i></button>
-        <h3 style="margin-bottom: 10px; color: #FFD700;"><i class="fa-solid fa-ticket"></i> Semua Kode Promo</h3>
-        <p style="font-size: 13px; margin-bottom: 20px; color: #a3b1cc;">Klik promo untuk langsung menggunakannya</p>
+        <h3 style="margin-bottom: 10px; color: #FFD700;"><i class="fa-solid fa-ticket"></i> <span data-key="allPromoCodes">Semua Kode Promo</span></h3>
+        <p style="font-size: 13px; margin-bottom: 20px; color: #a3b1cc;" data-key="clickPromoHint">Klik promo untuk langsung menggunakannya</p>
         <div id="promoListContent" style="margin-bottom: 20px; max-height: 400px; overflow-y: auto;">Loading...</div>
         <div style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 15px;">
-            <label style="font-size: 13px; margin-bottom: 8px; display: block;">Atau masukkan kode manual:</label>
+            <label style="font-size: 13px; margin-bottom: 8px; display: block;" data-key="orEnterManualLabel">Atau masukkan kode manual:</label>
             <div style="display: flex; gap: 10px;">
                 <input type="text" id="manualPromoCode" placeholder="Contoh: GRAB10" style="flex:1; padding:12px; border-radius:10px; border:1px solid #00B14F; background:rgba(255,255,255,0.05); color:white; text-transform:uppercase;">
-                <button onclick="applyManualPromo()" class="btn-primary" style="padding: 12px 20px;">Gunakan</button>
+                <button onclick="applyManualPromo()" class="btn-primary" style="padding: 12px 20px;" data-key="useBtn">Gunakan</button>
             </div>
         </div>
     </div>
@@ -1746,32 +1795,32 @@
 <!-- HISTORY SECTION -->
 <section id="history" class="history-section">
     <div class="container">
-        <h2 class="section-title"><span id="historyTitle">Riwayat</span> <span id="historyTitleHighlight">Pemesanan</span></h2>
+        <h2 class="section-title"><span id="historyTitle" data-key="historyTitle">Riwayat</span> <span id="historyTitleHighlight" data-key="historyTitleHighlight">Pemesanan</span></h2>
         <div class="history-list" id="historyList">
-            <p style="text-align: center; color: #a3b1cc;">Belum ada riwayat pemesanan.</p>
+            <p style="text-align: center; color: #a3b1cc;" data-key="noHistory">Belum ada riwayat pemesanan.</p>
         </div>
         <div style="text-align: center; margin-top: 20px;">
-            <button class="btn-secondary" onclick="clearHistory()">Hapus Riwayat</button>
+            <button class="btn-secondary" onclick="clearHistory()" data-key="clearHistoryBtn">Hapus Riwayat</button>
         </div>
     </div>
 </section>
 
 <section id="cara-pesan" class="steps">
     <div class="container">
-        <h2 class="section-title"><span id="stepsTitle">Cara</span> <span id="stepsTitleHighlight">Pemesanan</span></h2>
+        <h2 class="section-title"><span id="stepsTitle" data-key="stepsTitle">Cara</span> <span id="stepsTitleHighlight" data-key="stepsTitleHighlight">Pemesanan</span></h2>
         <div class="step-grid">
-            <div class="step"><div class="step-number">1</div>Isi Form / Hubungi WA</div>
-            <div class="step"><div class="step-number">2</div>Kirim Info Alamat</div>
-            <div class="step"><div class="step-number">3</div>Pilih Jenis Layanan</div>
-            <div class="step"><div class="step-number">4</div>Konfirmasi Biaya</div>
-            <div class="step"><div class="step-number">5</div>Driver/Kurir Jalan</div>
+            <div class="step"><div class="step-number">1</div><span data-key="step1">Isi Form / Hubungi WA</span></div>
+            <div class="step"><div class="step-number">2</div><span data-key="step2">Kirim Info Alamat</span></div>
+            <div class="step"><div class="step-number">3</div><span data-key="step3">Pilih Jenis Layanan</span></div>
+            <div class="step"><div class="step-number">4</div><span data-key="step4">Konfirmasi Biaya</span></div>
+            <div class="step"><div class="step-number">5</div><span data-key="step5">Driver/Kurir Jalan</span></div>
         </div>
     </div>
 </section>
 
 <footer>
     <h2>CRUIZEMATE</h2>
-    <p>Melayani pemesanan online transportasi & logistik 24 Jam.</p>
+    <p data-key="footerDesc">Melayani pemesanan online transportasi & logistik 24 Jam.</p>
     <p>WhatsApp: +62 812-6063-6666</p>
     <p>© 2026 CRUIZEMATE</p>
 </footer>
@@ -1779,7 +1828,7 @@
 <div class="contact-modal" id="contactModal">
     <div class="modal-content">
         <button class="close-modal" onclick="closeContactModal()"><i class="fa-solid fa-xmark"></i></button>
-        <h3>Hubungi Kami</h3>
+        <h3 data-key="contactUs">Hubungi Kami</h3>
         <div class="social-links-grid">
             <a href="https://www.instagram.com/nopallrmdd/" target="_blank" class="social-btn btn-instagram"><i class="fa-brands fa-instagram"></i> Instagram</a>
             <a href="https://wa.me/6281260636666" target="_blank" class="social-btn btn-whatsapp-modal"><i class="fa-brands fa-whatsapp"></i> WhatsApp Chat</a>
@@ -1790,19 +1839,19 @@
 <div class="admin-modal" id="adminModal">
     <div class="admin-modal-content">
         <button class="close-modal" onclick="closeAdminModal()"><i class="fa-solid fa-xmark"></i></button>
-        <h3><i class="fa-solid fa-lock"></i> Verifikasi Admin</h3>
+        <h3><i class="fa-solid fa-lock"></i> <span data-key="adminVerifyTitle">Verifikasi Admin</span></h3>
         <input type="password" id="adminPassword" placeholder="Kode Admin">
-        <button class="btn-primary" onclick="verifyAdmin()" style="width:100%;">Verifikasi</button>
-        <p style="margin-top: 15px; font-size: 11px;">Kode admin: <strong style="color:#00B14F;">admin123</strong></p>
+        <button class="btn-primary" onclick="verifyAdmin()" style="width:100%;" data-key="verifyBtn">Verifikasi</button>
+        <p style="margin-top: 15px; font-size: 11px;"><span data-key="adminCodeLabel">Kode admin</span>: <strong style="color:#00B14F;">admin123</strong></p>
     </div>
 </div>
 
 <div class="share-modal" id="shareModal" style="display: none; position: fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.8); justify-content:center; align-items:center; z-index:10001;">
     <div class="share-content" style="background:#0f172a; padding:30px; border-radius:20px; max-width:500px; width:90%;">
-        <h3>Bagikan Perjalanan</h3>
+        <h3 data-key="shareTripTitle">Bagikan Perjalanan</h3>
         <div class="share-link" id="shareLink" style="background:rgba(255,255,255,0.1); padding:10px; border-radius:8px; margin:15px 0;"></div>
-        <button class="btn-primary" onclick="copyShareLink()" style="width:100%;">📋 Copy Link</button>
-        <button class="btn-secondary" onclick="closeShareModal()" style="width:100%; margin-top:10px;">Tutup</button>
+        <button class="btn-primary" onclick="copyShareLink()" style="width:100%;" data-key="copyLinkBtn">📋 Copy Link</button>
+        <button class="btn-secondary" onclick="closeShareModal()" style="width:100%; margin-top:10px;" data-key="closeBtn">Tutup</button>
     </div>
 </div>
 
@@ -1831,6 +1880,332 @@
     let userPoints = parseInt(localStorage.getItem('userPoints') || '0');
     let userTotalSaving = parseInt(localStorage.getItem('userTotalSaving') || '0');
     
+    // ================ TRANSLATION DATABASE ================
+    const translations = {
+        id: {
+            // Navigation
+            navHome: "Home",
+            navServices: "Layanan",
+            navBook: "Pesan",
+            navPayment: "Fitur Pembayaran",
+            navHowToBook: "Cara Pesan",
+            navHistory: "Riwayat",
+            navMyDashboard: "👤 Dashboard Saya",
+            navAdmin: "📊 Admin",
+            navContact: "Kontak",
+            
+            // Hero Section
+            heroBadge: "🚖 JASA BOOKING ONLINE TERPERCAYA",
+            heroTitle: "Melayani Pemesanan Online",
+            heroDesc: "Solusi cepat dan aman untuk berbagai kebutuhan perjalanan, jastip, belanja, dan logistik Anda.",
+            feature1: "⚡ Respon Cepat",
+            feature2: "🚗 Driver Terpercaya",
+            feature3: "📱 Booking Mudah",
+            feature4: "💰 Harga Transparan",
+            feature5: "🎟️ Promo Spesial",
+            feature6: "🌦️ Tarif Dinamis",
+            bookNowBtn: "📝 Pesan via Formulir",
+            viewServicesBtn: "👁️ Lihat Layanan",
+            
+            // Tracking
+            trackingTitle: "Live",
+            trackingTitleHighlight: "Tracking",
+            step1Label: "Menunggu Konfirmasi",
+            step2Label: "Driver Menuju Lokasi",
+            step3Label: "Menjemput Penumpang",
+            step4Label: "Perjalanan Selesai",
+            shareTripBtn: "🔗 Bagikan Perjalanan",
+            
+            // Services
+            servicesTitle: "Layanan",
+            servicesTitleHighlight: "Kami",
+            service1Desc: "Perjalanan nyaman untuk individu dan keluarga dengan armada mobil terbaik.",
+            service2Desc: "Pengiriman paket dan dokumen kilat, aman, dan tepercaya.",
+            service3Desc: "Jasa titip beli makanan dan minuman favorit Anda.",
+            service4Desc: "Jasa titip beli barang dengan biaya per item Rp 10.000.",
+            service1Btn: "Pesan Sekarang",
+            service2Btn: "Kirim Barang",
+            service3Btn: "Titip Makan",
+            service4Btn: "Titip Belanja",
+            
+            // Form
+            formTitle: "Formulir",
+            formTitleHighlight: "Pemesanan",
+            multiplierLabel: "Tarif Normal",
+            favAddressTitle: "Alamat Favorit",
+            specialPromo: "🎉 Promo Spesial untuk Anda!",
+            viewAllPromo: "Lihat Semua",
+            loadingPromo: "Loading promo...",
+            labelNama: "Nama Pelanggan / Penumpang",
+            labelJenisLayanan: "Pilih Jenis Layanan",
+            selectServiceOption: "-- Pilih Layanan --",
+            itemName: "Nama Barang",
+            estWeight: "Estimasi Berat (Kg)",
+            itemQty: "Jumlah Barang",
+            uploadPhoto: "Upload Foto Barang (Opsional)",
+            clickToUpload: "Klik atau tap untuk upload foto barang",
+            pickupLocation: "Lokasi Penjemputan / Pengambilan",
+            destinationLocation: "Lokasi Tujuan / Pengantaran",
+            calcFareBtn: "Hitung Tarif",
+            routeDistance: "📍 Jarak Rute",
+            estFare: "💰 Estimasi Tarif",
+            dateLabel: "Tanggal Pelaksanaan",
+            timeLabel: "Jam Pelaksanaan",
+            ratingLabel: "Rating untuk Driver Sebelumnya (Opsional)",
+            submitBtn: "📤 Kirim Pesanan via WhatsApp",
+            calculatorTitle: "Kalkulator Tarif (Manual)",
+            distanceLabel: "Perkiraan Jarak Perjalanan (Kilometer)",
+            calcFareManualBtn: "💰 Hitung Tarif Argo",
+            estTotalFare: "Estimasi Total Tarif Perjalanan:",
+            baseRateNote: "*Tarif dasar Rp 3.300 / km (dapat berubah sesuai jam dan cuaca)",
+            
+            // Dashboard
+            dashboardTitle: "Dashboard",
+            myDashboardTitle: "Saya",
+            totalOrdersLabel: "Total Pesanan",
+            completedOrdersLabel: "Pesanan selesai",
+            totalSpentLabel: "Total Belanja",
+            accumulatedLabel: "Akumulasi transaksi",
+            rewardPointsLabel: "Poin Reward",
+            pointsExchangeInfo: "Tukar 100 poin = Rp 5.000",
+            promoUsedLabel: "Promo Digunakan",
+            totalSavedLabel: "Total hemat",
+            serviceStatsLabel: "📊 Statistik Per Layanan",
+            redeemPointsBtn: "🎁 Tukar Poin",
+            closeBtn: "Tutup",
+            
+            // Payments
+            paymentTitle: "Fitur",
+            paymentTitleHighlight: "Pembayaran",
+            cashTitle: "Tunai (Cash)",
+            cashDesc: "Bayar langsung dengan uang tunai kepada driver/kurir.",
+            bankTransferTitle: "Transfer Bank",
+            bankTransferDesc: "Pembayaran non-tunai via Transfer Bank.",
+            ewalletTitle: "E-Wallet",
+            ewalletDesc: "Pembayaran instan menggunakan GoPay.",
+            moreInfoBtn: "Info Lebih Lanjut",
+            confirmTransferBtn: "Konfirmasi Transfer",
+            
+            // Admin
+            adminDashboardTitle: "Dashboard",
+            adminLabel: "Admin",
+            totalRevenueLabel: "💰 Total Pendapatan",
+            monthlyOrdersLabel: "📅 Pesanan Bulan Ini",
+            monthlyRevenueLabel: "💵 Pendapatan Bulan Ini",
+            serviceSummaryLabel: "📈 Rekap Per Layanan",
+            showBtn: "Tampilkan",
+            dateCol: "Tanggal",
+            customerCol: "Pelanggan",
+            serviceCol: "Layanan",
+            distanceCol: "Jarak",
+            amountCol: "Nominal",
+            promoCol: "Promo",
+            ratingCol: "Rating",
+            loadingData: "Loading...",
+            exportCSVBtn: "📎 Export CSV",
+            exportPDFBtn: "📄 Export PDF",
+            managePromoBtn: "🎫 Kelola Promo",
+            adminVerifyTitle: "Verifikasi Admin",
+            verifyBtn: "Verifikasi",
+            adminCodeLabel: "Kode admin",
+            
+            // Promo Modal
+            allPromoCodes: "Semua Kode Promo",
+            clickPromoHint: "Klik promo untuk langsung menggunakannya",
+            orEnterManualLabel: "Atau masukkan kode manual:",
+            useBtn: "Gunakan",
+            
+            // History
+            historyTitle: "Riwayat",
+            historyTitleHighlight: "Pemesanan",
+            noHistory: "Belum ada riwayat pemesanan.",
+            clearHistoryBtn: "Hapus Riwayat",
+            
+            // Steps
+            stepsTitle: "Cara",
+            stepsTitleHighlight: "Pemesanan",
+            step1: "Isi Form / Hubungi WA",
+            step2: "Kirim Info Alamat",
+            step3: "Pilih Jenis Layanan",
+            step4: "Konfirmasi Biaya",
+            step5: "Driver/Kurir Jalan",
+            
+            // Footer & Modals
+            footerDesc: "Melayani pemesanan online transportasi & logistik 24 Jam.",
+            contactUs: "Hubungi Kami",
+            shareTripTitle: "Bagikan Perjalanan",
+            copyLinkBtn: "📋 Copy Link",
+            
+            // Buttons
+            themeToggle: "🌓 Mode",
+            myDashboard: "👤 Dashboard Saya",
+            adminBtn: "🔒 Admin",
+            managePromo: "🎫 Kelola Promo",
+            installApp: "Install App"
+        },
+        en: {
+            // Navigation
+            navHome: "Home",
+            navServices: "Services",
+            navBook: "Book",
+            navPayment: "Payment Features",
+            navHowToBook: "How to Book",
+            navHistory: "History",
+            navMyDashboard: "👤 My Dashboard",
+            navAdmin: "📊 Admin",
+            navContact: "Contact",
+            
+            // Hero Section
+            heroBadge: "🚖 TRUSTED ONLINE BOOKING SERVICE",
+            heroTitle: "Online Booking Service",
+            heroDesc: "Fast and secure solution for all your travel, shopping, and logistics needs.",
+            feature1: "⚡ Fast Response",
+            feature2: "🚗 Trusted Drivers",
+            feature3: "📱 Easy Booking",
+            feature4: "💰 Transparent Price",
+            feature5: "🎟️ Special Promos",
+            feature6: "🌦️ Dynamic Rates",
+            bookNowBtn: "📝 Book via Form",
+            viewServicesBtn: "👁️ View Services",
+            
+            // Tracking
+            trackingTitle: "Live",
+            trackingTitleHighlight: "Tracking",
+            step1Label: "Waiting Confirmation",
+            step2Label: "Driver Heading to Location",
+            step3Label: "Picking Up Passenger",
+            step4Label: "Trip Completed",
+            shareTripBtn: "🔗 Share Trip",
+            
+            // Services
+            servicesTitle: "Our",
+            servicesTitleHighlight: "Services",
+            service1Desc: "Comfortable travel for individuals and families with the best car fleet.",
+            service2Desc: "Fast, safe, and reliable package and document delivery.",
+            service3Desc: "Food and beverage purchasing service.",
+            service4Desc: "Shopping service with Rp 10,000 per item fee.",
+            service1Btn: "Book Now",
+            service2Btn: "Send Item",
+            service3Btn: "Order Food",
+            service4Btn: "Shopping Service",
+            
+            // Form
+            formTitle: "Booking",
+            formTitleHighlight: "Form",
+            multiplierLabel: "Normal Rate",
+            favAddressTitle: "Favorite Addresses",
+            specialPromo: "🎉 Special Promos for You!",
+            viewAllPromo: "View All",
+            loadingPromo: "Loading promo...",
+            labelNama: "Customer / Passenger Name",
+            labelJenisLayanan: "Select Service Type",
+            selectServiceOption: "-- Select Service --",
+            itemName: "Item Name",
+            estWeight: "Estimated Weight (Kg)",
+            itemQty: "Quantity",
+            uploadPhoto: "Upload Item Photo (Optional)",
+            clickToUpload: "Click or tap to upload photos",
+            pickupLocation: "Pickup / Collection Location",
+            destinationLocation: "Destination / Delivery Location",
+            calcFareBtn: "Calculate Fare",
+            routeDistance: "📍 Route Distance",
+            estFare: "💰 Estimated Fare",
+            dateLabel: "Date",
+            timeLabel: "Time",
+            ratingLabel: "Rating for Previous Driver (Optional)",
+            submitBtn: "📤 Send Order via WhatsApp",
+            calculatorTitle: "Fare Calculator (Manual)",
+            distanceLabel: "Estimated Travel Distance (Kilometers)",
+            calcFareManualBtn: "💰 Calculate Fare",
+            estTotalFare: "Estimated Total Fare:",
+            baseRateNote: "*Base rate Rp 3,300 / km (may vary by time and weather)",
+            
+            // Dashboard
+            dashboardTitle: "My",
+            myDashboardTitle: "Dashboard",
+            totalOrdersLabel: "Total Orders",
+            completedOrdersLabel: "Completed orders",
+            totalSpentLabel: "Total Spent",
+            accumulatedLabel: "Transaction accumulation",
+            rewardPointsLabel: "Reward Points",
+            pointsExchangeInfo: "Redeem 100 points = Rp 5,000",
+            promoUsedLabel: "Promos Used",
+            totalSavedLabel: "Total saved",
+            serviceStatsLabel: "📊 Service Statistics",
+            redeemPointsBtn: "🎁 Redeem Points",
+            closeBtn: "Close",
+            
+            // Payments
+            paymentTitle: "Payment",
+            paymentTitleHighlight: "Features",
+            cashTitle: "Cash",
+            cashDesc: "Pay directly with cash to driver/courier.",
+            bankTransferTitle: "Bank Transfer",
+            bankTransferDesc: "Non-cash payment via Bank Transfer.",
+            ewalletTitle: "E-Wallet",
+            ewalletDesc: "Instant payment using GoPay.",
+            moreInfoBtn: "More Info",
+            confirmTransferBtn: "Confirm Transfer",
+            
+            // Admin
+            adminDashboardTitle: "Admin",
+            adminLabel: "Dashboard",
+            totalRevenueLabel: "💰 Total Revenue",
+            monthlyOrdersLabel: "📅 Monthly Orders",
+            monthlyRevenueLabel: "💵 Monthly Revenue",
+            serviceSummaryLabel: "📈 Service Summary",
+            showBtn: "Show",
+            dateCol: "Date",
+            customerCol: "Customer",
+            serviceCol: "Service",
+            distanceCol: "Distance",
+            amountCol: "Amount",
+            promoCol: "Promo",
+            ratingCol: "Rating",
+            loadingData: "Loading...",
+            exportCSVBtn: "📎 Export CSV",
+            exportPDFBtn: "📄 Export PDF",
+            managePromoBtn: "🎫 Manage Promos",
+            adminVerifyTitle: "Admin Verification",
+            verifyBtn: "Verify",
+            adminCodeLabel: "Admin code",
+            
+            // Promo Modal
+            allPromoCodes: "All Promo Codes",
+            clickPromoHint: "Click promo to apply it",
+            orEnterManualLabel: "Or enter manual code:",
+            useBtn: "Apply",
+            
+            // History
+            historyTitle: "Booking",
+            historyTitleHighlight: "History",
+            noHistory: "No booking history yet.",
+            clearHistoryBtn: "Clear History",
+            
+            // Steps
+            stepsTitle: "How to",
+            stepsTitleHighlight: "Book",
+            step1: "Fill Form / Contact WA",
+            step2: "Send Address Info",
+            step3: "Select Service Type",
+            step4: "Confirm Cost",
+            step5: "Driver/Courier on the way",
+            
+            // Footer & Modals
+            footerDesc: "24/7 online transportation & logistics booking service.",
+            contactUs: "Contact Us",
+            shareTripTitle: "Share Trip",
+            copyLinkBtn: "📋 Copy Link",
+            
+            // Buttons
+            themeToggle: "🌓 Mode",
+            myDashboard: "👤 My Dashboard",
+            adminBtn: "🔒 Admin",
+            managePromo: "🎫 Manage Promos",
+            installApp: "Install App"
+        }
+    };
+    
     // ================ DYNAMIC PRICING (Peak Hour + Weather) ================
     function getCurrentMultiplier() {
         const now = new Date();
@@ -1838,21 +2213,18 @@
         let multiplier = 1.0;
         let reason = "";
         
-        // Peak hour logic
         if ((hour >= 7 && hour <= 9) || (hour >= 17 && hour <= 19)) {
             multiplier = 1.3;
-            reason = "🚦 Jam sibuk (pagi/sore)";
+            reason = currentLanguage === 'id' ? "🚦 Jam sibuk (pagi/sore)" : "🚦 Peak hour (morning/evening)";
         } else if ((hour >= 22 && hour <= 5)) {
             multiplier = 1.5;
-            reason = "🌙 Larut malam";
+            reason = currentLanguage === 'id' ? "🌙 Larut malam" : "🌙 Late night";
         }
         
-        // Simulated weather check (using hour as proxy for demo)
-        // In real implementation, you'd call weather API
-        const isRaining = (hour >= 14 && hour <= 16); // Simulate afternoon rain
+        const isRaining = (hour >= 14 && hour <= 16);
         if (isRaining) {
             multiplier = Math.max(multiplier, 1.2);
-            reason = reason ? `${reason} + 🌧️ Hujan` : "🌧️ Cuaca hujan";
+            reason = reason ? `${reason} + 🌧️ ${currentLanguage === 'id' ? 'Hujan' : 'Rainy'}` : `🌧️ ${currentLanguage === 'id' ? 'Cuaca hujan' : 'Rainy weather'}`;
         }
         
         return { multiplier, reason };
@@ -1874,12 +2246,11 @@
             multiplierBox.style.background = "rgba(255, 215, 0, 0.15)";
         } else {
             multiplierBadge.innerHTML = "x1.00";
-            multiplierReason.innerHTML = "Tarif normal";
+            multiplierReason.innerHTML = currentLanguage === 'id' ? "Tarif normal" : "Normal rate";
             multiplierBox.style.borderColor = "#00B14F";
             multiplierBox.style.background = "rgba(0, 177, 79, 0.1)";
         }
         
-        // Recalculate current fare if distance exists
         if (currentJarakAkurat > 0) {
             const basePrice = currentJarakAkurat * TARIF_PER_KM;
             currentHargaAkurat = Math.round(basePrice * currentMultiplier);
@@ -1888,8 +2259,61 @@
         }
     }
     
-    // Update multiplier every minute
-    setInterval(updateDynamicPriceDisplay, 60000);
+    // ================ LANGUAGE FUNCTIONS ================
+    function toggleLanguage() {
+        currentLanguage = currentLanguage === 'id' ? 'en' : 'id';
+        updateAllTexts();
+        updateDynamicPriceDisplay();
+        const langToggle = document.getElementById('langToggleBtn');
+        if (langToggle) langToggle.innerHTML = currentLanguage === 'id' ? '🇬🇧 EN' : '🇮🇩 ID';
+        showNotification(currentLanguage === 'id' ? 'Bahasa diubah ke Indonesia' : 'Language changed to English', 'success');
+        localStorage.setItem('language', currentLanguage);
+    }
+    
+    function updateAllTexts() {
+        const elements = document.querySelectorAll('[data-key]');
+        elements.forEach(element => {
+            const key = element.getAttribute('data-key');
+            if (translations[currentLanguage][key]) {
+                if (element.tagName === 'INPUT' || element.tagName === 'TEXTAREA') {
+                    if (element.placeholder) {
+                        element.placeholder = translations[currentLanguage][key];
+                    }
+                } else {
+                    element.innerHTML = translations[currentLanguage][key];
+                }
+            }
+        });
+        
+        // Update special elements
+        const heroTitleSpan = document.querySelector('#heroTitle span:last-child');
+        if (heroTitleSpan) heroTitleSpan.innerHTML = translations[currentLanguage].heroTitle;
+        
+        document.title = currentLanguage === 'id' ? 'CRUIZEMATE - Jasa Booking Transportasi & Logistik Premium' : 'CRUIZEMATE - Premium Transport & Logistics Booking Service';
+        
+        // Update multiplier reason
+        const { reason } = getCurrentMultiplier();
+        const multiplierReason = document.getElementById('multiplierReason');
+        if (multiplierReason && currentMultiplier > 1) {
+            multiplierReason.innerHTML = reason;
+        } else if (multiplierReason) {
+            multiplierReason.innerHTML = currentLanguage === 'id' ? "Tarif normal" : "Normal rate";
+        }
+        
+        // Update status labels
+        document.getElementById('step1Label').innerHTML = translations[currentLanguage].step1Label;
+        document.getElementById('step2Label').innerHTML = translations[currentLanguage].step2Label;
+        document.getElementById('step3Label').innerHTML = translations[currentLanguage].step3Label;
+        document.getElementById('step4Label').innerHTML = translations[currentLanguage].step4Label;
+        
+        // Update share modal
+        const shareTitle = document.querySelector('#shareModal h3');
+        if (shareTitle) shareTitle.innerHTML = translations[currentLanguage].shareTripTitle;
+        const copyBtn = document.querySelector('#shareModal .btn-primary');
+        if (copyBtn) copyBtn.innerHTML = translations[currentLanguage].copyLinkBtn;
+        const closeShareBtn = document.querySelector('#shareModal .btn-secondary');
+        if (closeShareBtn) closeShareBtn.innerHTML = translations[currentLanguage].closeBtn;
+    }
     
     // ================ CUSTOMER DASHBOARD ================
     function updateCustomerDashboard() {
@@ -1910,7 +2334,6 @@
             const filtered = customerOrders.filter(o => o.layanan === service);
             const count = filtered.length;
             const spent = filtered.reduce((sum, o) => sum + (o.totalAmount || 0), 0);
-            const id = service.toLowerCase();
             if (document.getElementById(`cust${service}Count`)) {
                 document.getElementById(`cust${service}Count`).innerText = count;
                 document.getElementById(`cust${service}Spent`).innerText = formatRupiah(spent);
@@ -1926,7 +2349,7 @@
         userPoints += pointsEarned;
         localStorage.setItem('userPoints', userPoints);
         updateCustomerDashboard();
-        showNotification(`+${pointsEarned} poin!`, 'success');
+        showNotification(currentLanguage === 'id' ? `+${pointsEarned} poin!` : `+${pointsEarned} points!`, 'success');
     }
     
     function addSaving(amount) {
@@ -1938,12 +2361,14 @@
     function redeemPoints() {
         if (userPoints >= 100) {
             const redeemAmount = Math.floor(userPoints / 100) * 5000;
-            if (confirm(`Tukarkan ${Math.floor(userPoints / 100) * 100} poin Anda menjadi diskon Rp ${redeemAmount.toLocaleString()} untuk pesanan berikutnya?`)) {
+            const confirmMsg = currentLanguage === 'id' 
+                ? `Tukarkan ${Math.floor(userPoints / 100) * 100} poin Anda menjadi diskon Rp ${redeemAmount.toLocaleString()} untuk pesanan berikutnya?`
+                : `Redeem ${Math.floor(userPoints / 100) * 100} points for Rp ${redeemAmount.toLocaleString()} discount on your next order?`;
+            if (confirm(confirmMsg)) {
                 const redeemed = Math.floor(userPoints / 100) * 100;
                 userPoints -= redeemed;
                 localStorage.setItem('userPoints', userPoints);
                 
-                // Store redeem voucher
                 const voucher = {
                     code: `POIN${Date.now()}`,
                     discount: redeemAmount,
@@ -1954,10 +2379,10 @@
                 localStorage.setItem('userVouchers', JSON.stringify(vouchers));
                 
                 updateCustomerDashboard();
-                showNotification(`Selamat! Anda mendapat voucher Rp ${redeemAmount.toLocaleString()}!`, 'success');
+                showNotification(currentLanguage === 'id' ? `Selamat! Anda mendapat voucher Rp ${redeemAmount.toLocaleString()}!` : `Congratulations! You got a Rp ${redeemAmount.toLocaleString()} voucher!`, 'success');
             }
         } else {
-            showNotification(`Poin Anda ${userPoints}/100. Butuh ${100 - userPoints} poin lagi!`, 'error');
+            showNotification(currentLanguage === 'id' ? `Poin Anda ${userPoints}/100. Butuh ${100 - userPoints} poin lagi!` : `Your points ${userPoints}/100. Need ${100 - userPoints} more points!`, 'error');
         }
     }
     
@@ -1972,17 +2397,16 @@
     }
     
     function closeCustomerDashboard() {
-        // Just scroll back, no need to hide
         window.scrollTo({ top: 0, behavior: 'smooth' });
     }
     
     // ================ PROMO DATABASE ================
     let promoDatabase = {
-        "GRAB10": { type: "percentage", value: 10, minTransaction: 0, maxDiscount: 50000, description: "Diskon 10% (maks. Rp 50.000)", expiredDate: "2026-12-31", usageLimit: 100, usedCount: 0, icon: "🎉" },
-        "NEWUSER5RB": { type: "nominal", value: 5000, minTransaction: 20000, maxDiscount: 5000, description: "Potongan Rp 5.000 (min transaksi Rp 20.000)", expiredDate: "2026-06-30", usageLimit: 50, usedCount: 0, icon: "🆕" },
-        "FREESHIP50": { type: "percentage", value: 50, minTransaction: 50000, maxDiscount: 30000, description: "Diskon 50% ongkir (maks. Rp 30.000)", expiredDate: "2026-05-31", usageLimit: 30, usedCount: 0, icon: "🚚" },
-        "GRABWEEKEND": { type: "nominal", value: 15000, minTransaction: 75000, maxDiscount: 15000, description: "Potongan Rp 15.000", expiredDate: "2026-08-31", usageLimit: 200, usedCount: 0, icon: "🎈" },
-        "JASTIP20": { type: "percentage", value: 20, minTransaction: 30000, maxDiscount: 40000, description: "Diskon 20% untuk Jastip", expiredDate: "2026-10-31", usageLimit: 100, usedCount: 0, icon: "🛍️" }
+        "GRAB10": { type: "percentage", value: 10, minTransaction: 0, maxDiscount: 50000, description: "Diskon 10% (maks. Rp 50.000)", descriptionEn: "10% off (max Rp 50,000)", expiredDate: "2026-12-31", usageLimit: 100, usedCount: 0, icon: "🎉" },
+        "NEWUSER5RB": { type: "nominal", value: 5000, minTransaction: 20000, maxDiscount: 5000, description: "Potongan Rp 5.000 (min transaksi Rp 20.000)", descriptionEn: "Rp 5,000 off (min transaction Rp 20,000)", expiredDate: "2026-06-30", usageLimit: 50, usedCount: 0, icon: "🆕" },
+        "FREESHIP50": { type: "percentage", value: 50, minTransaction: 50000, maxDiscount: 30000, description: "Diskon 50% ongkir (maks. Rp 30.000)", descriptionEn: "50% delivery fee off (max Rp 30,000)", expiredDate: "2026-05-31", usageLimit: 30, usedCount: 0, icon: "🚚" },
+        "GRABWEEKEND": { type: "nominal", value: 15000, minTransaction: 75000, maxDiscount: 15000, description: "Potongan Rp 15.000", descriptionEn: "Rp 15,000 off", expiredDate: "2026-08-31", usageLimit: 200, usedCount: 0, icon: "🎈" },
+        "JASTIP20": { type: "percentage", value: 20, minTransaction: 30000, maxDiscount: 40000, description: "Diskon 20% untuk Jastip", descriptionEn: "20% off for Jastip", expiredDate: "2026-10-31", usageLimit: 100, usedCount: 0, icon: "🛍️" }
     };
     
     let userPromoHistory = JSON.parse(localStorage.getItem('userPromoHistory') || '{}');
@@ -2002,19 +2426,6 @@
         setTimeout(() => notification.remove(), 3000);
     }
     
-    // ================ TRANSLATION ================
-    function toggleLanguage() {
-        currentLanguage = currentLanguage === 'id' ? 'en' : 'id';
-        updateLanguage();
-        showNotification(currentLanguage === 'id' ? 'Bahasa diubah ke Indonesia' : 'Language changed to English', 'success');
-    }
-    
-    function updateLanguage() {
-        // Simplified - keep Indonesian for demo
-        const langToggle = document.getElementById('langToggleBtn');
-        if (langToggle) langToggle.innerHTML = currentLanguage === 'id' ? '🇬🇧 EN' : '🇮🇩 ID';
-    }
-    
     function toggleTheme() {
         currentTheme = currentTheme === 'dark' ? 'light' : 'dark';
         if (currentTheme === 'light') document.body.classList.add('light-mode');
@@ -2025,6 +2436,13 @@
     if (localStorage.getItem('theme') === 'light') {
         currentTheme = 'light';
         document.body.classList.add('light-mode');
+    }
+    
+    // Load saved language
+    if (localStorage.getItem('language') === 'en') {
+        currentLanguage = 'en';
+        updateAllTexts();
+        document.getElementById('langToggleBtn').innerHTML = '🇮🇩 ID';
     }
     
     // ================ RATING SYSTEM ================
@@ -2046,9 +2464,9 @@
             favoriteAddresses.push({ jemput, tujuan });
             localStorage.setItem('favoriteAddresses', JSON.stringify(favoriteAddresses));
             loadFavoriteAddresses();
-            showNotification('Alamat berhasil disimpan!', 'success');
+            showNotification(currentLanguage === 'id' ? 'Alamat berhasil disimpan!' : 'Address saved successfully!', 'success');
         } else {
-            showNotification('Lengkapi alamat terlebih dahulu!', 'error');
+            showNotification(currentLanguage === 'id' ? 'Lengkapi alamat terlebih dahulu!' : 'Please complete the addresses first!', 'error');
         }
     }
     
@@ -2063,13 +2481,13 @@
             btn.onclick = () => {
                 document.getElementById('jemput').value = addr.jemput;
                 document.getElementById('tujuan').value = addr.tujuan;
-                showNotification('Alamat favorit diterapkan!', 'success');
+                showNotification(currentLanguage === 'id' ? 'Alamat favorit diterapkan!' : 'Favorite address applied!', 'success');
             };
             container.appendChild(btn);
         });
         const saveBtn = document.createElement('button');
         saveBtn.className = 'fav-address-btn';
-        saveBtn.innerHTML = '<i class="fa-regular fa-plus"></i> Simpan Alamat Ini';
+        saveBtn.innerHTML = '<i class="fa-regular fa-plus"></i> ' + (currentLanguage === 'id' ? 'Simpan Alamat Ini' : 'Save This Address');
         saveBtn.onclick = saveFavoriteAddress;
         container.appendChild(saveBtn);
     }
@@ -2085,9 +2503,12 @@
             document.getElementById('liveTarifText').innerText = formatRupiah(currentHargaAkurat);
             document.getElementById('liveTracker').style.display = "block";
             if (appliedPromo) updateDisplayWithPromo();
-            showNotification(`Jarak ${currentJarakAkurat} KM, estimasi tarif ${formatRupiah(currentHargaAkurat)}${currentMultiplier > 1 ? ` (${currentMultiplierReason})` : ''}`, 'success');
+            const notifMsg = currentLanguage === 'id' 
+                ? `Jarak ${currentJarakAkurat} KM, estimasi tarif ${formatRupiah(currentHargaAkurat)}${currentMultiplier > 1 ? ` (${currentMultiplierReason})` : ''}`
+                : `Distance ${currentJarakAkurat} KM, estimated fare ${formatRupiah(currentHargaAkurat)}${currentMultiplier > 1 ? ` (${currentMultiplierReason})` : ''}`;
+            showNotification(notifMsg, 'success');
         } else {
-            showNotification('Masukkan jarak terlebih dahulu!', 'error');
+            showNotification(currentLanguage === 'id' ? 'Masukkan jarak terlebih dahulu!' : 'Please enter the distance first!', 'error');
         }
     }
     
@@ -2101,7 +2522,7 @@
                 document.getElementById('textTotalTarif').innerHTML = `${formatRupiah(total)}<span style="font-size:11px; display:block;">(${currentMultiplierReason})</span>`;
             }
         } else {
-            showNotification('Masukkan jarak dengan benar!', 'error');
+            showNotification(currentLanguage === 'id' ? 'Masukkan jarak dengan benar!' : 'Please enter a valid distance!', 'error');
         }
     }
     
@@ -2115,18 +2536,20 @@
             return now <= expired && promo.usedCount < promo.usageLimit;
         });
         if (activePromos.length === 0) {
-            slider.innerHTML = `<div style="text-align: center; width: 100%; padding: 40px;">✨ Belum ada promo aktif</div>`;
+            slider.innerHTML = `<div style="text-align: center; width: 100%; padding: 40px;">✨ ${currentLanguage === 'id' ? 'Belum ada promo aktif' : 'No active promos'}</div>`;
             return;
         }
-        slider.innerHTML = activePromos.map(([code, promo]) => `
+        slider.innerHTML = activePromos.map(([code, promo]) => {
+            const desc = currentLanguage === 'id' ? promo.description : promo.descriptionEn;
+            return `
             <div class="promo-slider-card" onclick="applyPromoCode('${code}')">
                 <div class="promo-badge">${promo.icon} ${promo.type === 'percentage' ? `${promo.value}% OFF` : `RP ${promo.value.toLocaleString()} OFF`}</div>
                 <div class="promo-code">${code}</div>
                 <div class="promo-discount">${promo.type === 'percentage' ? `${promo.value}%` : `Rp ${promo.value.toLocaleString()}`}</div>
-                <div class="promo-desc">${promo.description}</div>
-                <div class="promo-expiry">⏰ s/d ${new Date(promo.expiredDate).toLocaleDateString('id-ID')}</div>
+                <div class="promo-desc">${desc}</div>
+                <div class="promo-expiry">⏰ ${currentLanguage === 'id' ? 's/d' : 'until'} ${new Date(promo.expiredDate).toLocaleDateString('id-ID')}</div>
             </div>
-        `).join('');
+        `}).join('');
     }
     
     function scrollPromoSlider(direction) {
@@ -2141,13 +2564,15 @@
             const expired = new Date(promo.expiredDate);
             return now <= expired && promo.usedCount < promo.usageLimit;
         });
-        promoContent.innerHTML = activePromos.map(([code, promo]) => `
+        promoContent.innerHTML = activePromos.map(([code, promo]) => {
+            const desc = currentLanguage === 'id' ? promo.description : promo.descriptionEn;
+            return `
             <div onclick="applyPromoCode('${code}')" style="background:rgba(0,177,79,0.1); border-radius:12px; padding:12px; margin-bottom:10px; cursor:pointer;">
                 <div style="display:flex; justify-content:space-between;"><strong style="color:#00B14F;">${code}</strong><span>${promo.type === 'percentage' ? `${promo.value}%` : `Rp ${promo.value.toLocaleString()}`}</span></div>
-                <div style="font-size:12px;">${promo.description}</div>
-                <div style="font-size:11px;">⏰ ${new Date(promo.expiredDate).toLocaleDateString('id-ID')}</div>
+                <div style="font-size:12px;">${desc}</div>
+                <div style="font-size:11px;">⏰ ${currentLanguage === 'id' ? 's/d' : 'until'} ${new Date(promo.expiredDate).toLocaleDateString('id-ID')}</div>
             </div>
-        `).join('');
+        `}).join('');
         document.getElementById('promoModal').classList.add('active');
     }
     
@@ -2157,11 +2582,23 @@
     
     function applyPromoCode(code) {
         const promo = promoDatabase[code];
-        if (!promo) { showNotification('Kode promo tidak valid!', 'error'); return false; }
+        if (!promo) { 
+            showNotification(currentLanguage === 'id' ? 'Kode promo tidak valid!' : 'Invalid promo code!', 'error'); 
+            return false; 
+        }
         const now = new Date();
-        if (now > new Date(promo.expiredDate)) { showNotification('Promo kadaluarsa!', 'error'); return false; }
-        if (promo.usedCount >= promo.usageLimit) { showNotification('Kuota promo habis!', 'error'); return false; }
-        if (currentHargaAkurat < promo.minTransaction) { showNotification(`Minimal transaksi ${formatRupiah(promo.minTransaction)}`, 'error'); return false; }
+        if (now > new Date(promo.expiredDate)) { 
+            showNotification(currentLanguage === 'id' ? 'Promo kadaluarsa!' : 'Promo expired!', 'error'); 
+            return false; 
+        }
+        if (promo.usedCount >= promo.usageLimit) { 
+            showNotification(currentLanguage === 'id' ? 'Kuota promo habis!' : 'Promo quota exhausted!', 'error'); 
+            return false; 
+        }
+        if (currentHargaAkurat < promo.minTransaction) { 
+            showNotification(`${currentLanguage === 'id' ? 'Minimal transaksi' : 'Minimum transaction'} ${formatRupiah(promo.minTransaction)}`, 'error'); 
+            return false; 
+        }
         
         let discount = 0;
         if (promo.type === 'percentage') {
@@ -2173,14 +2610,17 @@
         const finalPrice = currentHargaAkurat - discount;
         appliedPromo = { code, discount, originalPrice: currentHargaAkurat, finalPrice, promoData: promo };
         updateDisplayWithPromo();
-        showNotification(`✅ Promo ${code} berhasil! Hemat ${formatRupiah(discount)}`, 'success');
+        showNotification(`${currentLanguage === 'id' ? '✅ Promo' : '✅ Promo'} ${code} ${currentLanguage === 'id' ? 'berhasil! Hemat' : 'applied! Save'} ${formatRupiah(discount)}`, 'success');
         closePromoModal();
         return true;
     }
     
     function applyManualPromo() {
         const code = document.getElementById('manualPromoCode').value.trim().toUpperCase();
-        if (!code) { showNotification('Masukkan kode promo!', 'error'); return; }
+        if (!code) { 
+            showNotification(currentLanguage === 'id' ? 'Masukkan kode promo!' : 'Please enter promo code!', 'error'); 
+            return; 
+        }
         applyPromoCode(code);
     }
     
@@ -2195,7 +2635,7 @@
                 const liveTracker = document.getElementById('liveTracker');
                 if (liveTracker) liveTracker.appendChild(promoInfo);
             }
-            promoInfo.innerHTML = `🎉 Promo ${appliedPromo.code} aktif! Hemat ${formatRupiah(appliedPromo.discount)} <button onclick="removePromo()" style="background:none; border:none; color:#ff6b6b; cursor:pointer;">Batalkan</button>`;
+            promoInfo.innerHTML = `🎉 ${currentLanguage === 'id' ? 'Promo' : 'Promo'} ${appliedPromo.code} ${currentLanguage === 'id' ? 'aktif! Hemat' : 'active! Save'} ${formatRupiah(appliedPromo.discount)} <button onclick="removePromo()" style="background:none; border:none; color:#ff6b6b; cursor:pointer;">${currentLanguage === 'id' ? 'Batalkan' : 'Cancel'}</button>`;
         }
     }
     
@@ -2205,7 +2645,7 @@
         if (trackerElement && currentHargaAkurat > 0) trackerElement.innerHTML = formatRupiah(currentHargaAkurat);
         const promoInfo = document.getElementById('promoInfoBox');
         if (promoInfo) promoInfo.remove();
-        showNotification('Promo dibatalkan', 'info');
+        showNotification(currentLanguage === 'id' ? 'Promo dibatalkan' : 'Promo canceled', 'info');
     }
     
     // ================ HISTORY FUNCTIONS ================
@@ -2230,14 +2670,14 @@
         loadHistory();
         if (isAdmin) loadDashboardData();
         updateCustomerDashboard();
-        showNotification('Pesanan berhasil disimpan!', 'success');
+        showNotification(currentLanguage === 'id' ? 'Pesanan berhasil disimpan!' : 'Order saved successfully!', 'success');
     }
     
     function loadHistory() {
         const container = document.getElementById('historyList');
         if (!container) return;
         if (bookingHistory.length === 0) {
-            container.innerHTML = '<p style="text-align:center; color:#a3b1cc;">Belum ada riwayat pemesanan.</p>';
+            container.innerHTML = `<p style="text-align:center; color:#a3b1cc;">${currentLanguage === 'id' ? 'Belum ada riwayat pemesanan.' : 'No booking history yet.'}</p>`;
             return;
         }
         container.innerHTML = bookingHistory.map(order => `
@@ -2245,8 +2685,8 @@
                 <div style="display:flex; justify-content:space-between;"><strong>${order.layanan || '-'}</strong><small>${new Date(order.timestamp).toLocaleDateString()}</small></div>
                 <div style="font-size:12px;">📍 ${(order.jemput || '-').substring(0,30)}...</div>
                 <div class="history-amount">💰 ${formatRupiah(order.totalAmount || 0)}</div>
-                ${order.promoUsed ? `<div style="font-size:11px; color:#FFD700;">🎟️ ${order.promoUsed} (hemat ${formatRupiah(order.promoDiscount)})</div>` : ''}
-                <button class="card-btn" style="margin-top:10px; padding:8px;" onclick="event.stopPropagation();repeatOrder(${order.id})">🔄 Pesan Lagi</button>
+                ${order.promoUsed ? `<div style="font-size:11px; color:#FFD700;">🎟️ ${order.promoUsed} (${currentLanguage === 'id' ? 'hemat' : 'save'} ${formatRupiah(order.promoDiscount)})</div>` : ''}
+                <button class="card-btn" style="margin-top:10px; padding:8px;" onclick="event.stopPropagation();repeatOrder(${order.id})">🔄 ${currentLanguage === 'id' ? 'Pesan Lagi' : 'Order Again'}</button>
             </div>
         `).join('');
     }
@@ -2269,19 +2709,19 @@
                 document.getElementById('liveTarifText').innerText = formatRupiah(currentHargaAkurat);
                 document.getElementById('liveTracker').style.display = "block";
             }
-            showNotification('Data pesanan telah diisi ulang!', 'success');
+            showNotification(currentLanguage === 'id' ? 'Data pesanan telah diisi ulang!' : 'Order data has been refilled!', 'success');
             document.getElementById('form-pemesanan').scrollIntoView({ behavior: 'smooth' });
         }
     }
     
     function clearHistory() {
-        if (confirm('Hapus semua riwayat?')) {
+        if (confirm(currentLanguage === 'id' ? 'Hapus semua riwayat?' : 'Clear all history?')) {
             bookingHistory = [];
             localStorage.setItem('bookingHistory', JSON.stringify(bookingHistory));
             loadHistory();
             if (isAdmin) loadDashboardData();
             updateCustomerDashboard();
-            showNotification('Riwayat berhasil dihapus!', 'success');
+            showNotification(currentLanguage === 'id' ? 'Riwayat berhasil dihapus!' : 'History cleared successfully!', 'success');
         }
     }
     
@@ -2314,35 +2754,49 @@
         const year = parseInt(document.getElementById('yearSelect').value);
         const filtered = bookingHistory.filter(o => new Date(o.timestamp).getMonth() + 1 === month && new Date(o.timestamp).getFullYear() === year);
         const tbody = document.getElementById('reportTableBody');
-        if (filtered.length === 0) { tbody.innerHTML = `<tr><td colspan="7" style="text-align:center;">Tidak ada数据</td></tr>`; return; }
+        if (filtered.length === 0) { 
+            tbody.innerHTML = `<tr><td colspan="7" style="text-align:center;">${currentLanguage === 'id' ? 'Tidak ada data' : 'No data'}</td></tr>`; 
+            return; 
+        }
         tbody.innerHTML = filtered.map(o => `<tr><td>${new Date(o.timestamp).toLocaleDateString('id-ID')}</td><td>${o.nama || '-'}</td><td>${o.layanan || '-'}</td><td>${o.distance || '-'}</td><td>${formatRupiah(o.totalAmount || 0)}</td><td>${o.promoUsed || '-'}</td><td>${o.rating || '-'}</td></tr>`).join('');
     }
     
-    function exportToCSV() { showNotification('Fitur export tersedia', 'info'); }
-    function exportToPDF() { showNotification('Fitur export tersedia', 'info'); }
+    function exportToCSV() { 
+        showNotification(currentLanguage === 'id' ? 'Fitur export tersedia' : 'Export feature available', 'info'); 
+    }
+    function exportToPDF() { 
+        showNotification(currentLanguage === 'id' ? 'Fitur export tersedia' : 'Export feature available', 'info'); 
+    }
     
-    function openAdminModal() { document.getElementById('adminModal').classList.add('active'); }
-    function closeAdminModal() { document.getElementById('adminModal').classList.remove('active'); }
+    function openAdminModal() { 
+        document.getElementById('adminModal').classList.add('active'); 
+    }
+    function closeAdminModal() { 
+        document.getElementById('adminModal').classList.remove('active'); 
+    }
     
     function verifyAdmin() {
         const password = document.getElementById('adminPassword').value;
         if (password === ADMIN_PASSWORD) {
             isAdmin = true;
             closeAdminModal();
-            showNotification('Verifikasi admin berhasil!', 'success');
+            showNotification(currentLanguage === 'id' ? 'Verifikasi admin berhasil!' : 'Admin verification successful!', 'success');
             document.getElementById('dashboardMenuLink').style.display = 'block';
             document.getElementById('dashboard').style.display = 'block';
             document.getElementById('promoManageBtn').style.display = 'inline-flex';
             loadDashboardData();
             sessionStorage.setItem('adminSession', 'true');
         } else {
-            showNotification('Kode admin salah!', 'error');
+            showNotification(currentLanguage === 'id' ? 'Kode admin salah!' : 'Wrong admin code!', 'error');
         }
     }
     
     function openPromoAdminPanel() {
-        if (!isAdmin) { showNotification('Hanya admin!', 'error'); return; }
-        showNotification('Fitur kelola promo (admin)', 'info');
+        if (!isAdmin) { 
+            showNotification(currentLanguage === 'id' ? 'Hanya admin!' : 'Admin only!', 'error'); 
+            return; 
+        }
+        showNotification(currentLanguage === 'id' ? 'Fitur kelola promo (admin)' : 'Manage promos feature (admin)', 'info');
     }
     
     // ================ STATUS TRACKING ================
@@ -2361,9 +2815,9 @@
             if (currentOrderStatus < 3) {
                 currentOrderStatus++;
                 updateOrderStatus(currentOrderStatus);
-                if (currentOrderStatus === 1) showNotification('🚗 Driver menuju lokasi Anda', 'info');
-                else if (currentOrderStatus === 2) showNotification('📍 Driver sedang menjemput', 'info');
-                else if (currentOrderStatus === 3) showNotification('✅ Perjalanan selesai!', 'success');
+                if (currentOrderStatus === 1) showNotification(currentLanguage === 'id' ? '🚗 Driver menuju lokasi Anda' : '🚗 Driver heading to your location', 'info');
+                else if (currentOrderStatus === 2) showNotification(currentLanguage === 'id' ? '📍 Driver sedang menjemput' : '📍 Driver is picking you up', 'info');
+                else if (currentOrderStatus === 3) showNotification(currentLanguage === 'id' ? '✅ Perjalanan selesai!' : '✅ Trip completed!', 'success');
                 if (currentOrderStatus < 3) simulateDriverMovement();
             }
         }, 5000);
@@ -2376,9 +2830,17 @@
         document.getElementById('shareModal').style.display = 'flex';
     }
     
-    function closeShareModal() { document.getElementById('shareModal').style.display = 'none'; }
-    function copyShareLink() { navigator.clipboard.writeText(document.getElementById('shareLink').innerHTML); showNotification('Link disalin!', 'success'); }
-    function emergencyCall() { if (confirm('Hubungi 112?')) window.location.href = 'tel:112'; }
+    function closeShareModal() { 
+        document.getElementById('shareModal').style.display = 'none'; 
+    }
+    function copyShareLink() { 
+        navigator.clipboard.writeText(document.getElementById('shareLink').innerHTML); 
+        showNotification(currentLanguage === 'id' ? 'Link disalin!' : 'Link copied!', 'success'); 
+    }
+    function emergencyCall() { 
+        if (confirm(currentLanguage === 'id' ? 'Hubungi 112?' : 'Call 112?')) 
+            window.location.href = 'tel:112'; 
+    }
     function updateFormLabels() {
         const val = document.getElementById('jenisLayanan').value;
         const gosendFields = document.getElementById('gosendFields');
@@ -2399,17 +2861,28 @@
         const tujuan = document.getElementById('tujuan').value;
         const tanggal = document.getElementById('tanggalJemput').value;
         const jam = document.getElementById('jamJemput').value;
-        if (!nama || !layanan || !jemput || !tujuan || !tanggal || !jam) { showNotification('Lengkapi data!', 'error'); return; }
-        if (currentJarakAkurat === 0) { showNotification('Hitung jarak dulu!', 'error'); return; }
+        if (!nama || !layanan || !jemput || !tujuan || !tanggal || !jam) { 
+            showNotification(currentLanguage === 'id' ? 'Lengkapi data!' : 'Please complete the data!', 'error'); 
+            return; 
+        }
+        if (currentJarakAkurat === 0) { 
+            showNotification(currentLanguage === 'id' ? 'Hitung jarak dulu!' : 'Calculate the distance first!', 'error'); 
+            return; 
+        }
         
         let detailGoSend = "";
         if (layanan === "GoSend" || layanan === "Jastip") {
-            detailGoSend = `%0A🛍️ Barang: ${document.getElementById('namaBarang').value || '-'}%0A⚖️ Berat: ${document.getElementById('beratBarang').value || '-'} Kg%0A🔢 Jumlah: ${document.getElementById('jumlahBarang').value || '-'} Item%0A`;
+            const itemName = currentLanguage === 'id' ? 'Barang' : 'Item';
+            const weight = currentLanguage === 'id' ? 'Berat' : 'Weight';
+            const qty = currentLanguage === 'id' ? 'Jumlah' : 'Quantity';
+            detailGoSend = `%0A🛍️ ${itemName}: ${document.getElementById('namaBarang').value || '-'}%0A⚖️ ${weight}: ${document.getElementById('beratBarang').value || '-'} Kg%0A🔢 ${qty}: ${document.getElementById('jumlahBarang').value || '-'} ${currentLanguage === 'id' ? 'Item' : 'Item(s)'}%0A`;
         }
         let finalPrice = appliedPromo ? appliedPromo.finalPrice : currentHargaAkurat;
-        let promoText = appliedPromo ? `%0A🎟️ Promo: ${appliedPromo.code} (hemat ${formatRupiah(appliedPromo.discount)})%0A💰 Total: ${formatRupiah(finalPrice)}` : "";
+        let promoText = appliedPromo ? `%0A🎟️ ${currentLanguage === 'id' ? 'Promo' : 'Promo'}: ${appliedPromo.code} (${currentLanguage === 'id' ? 'hemat' : 'save'} ${formatRupiah(appliedPromo.discount)})%0A💰 ${currentLanguage === 'id' ? 'Total' : 'Total'}: ${formatRupiah(finalPrice)}` : "";
         let multiplierText = currentMultiplier > 1 ? `%0A⚠️ ${currentMultiplierReason} (x${currentMultiplier.toFixed(2)})` : "";
-        const textWA = `Halo Admin, saya ingin order:%0A%0A👤 ${nama}%0A🛠️ ${layanan}${detailGoSend}🛫 ${jemput}%0A🛬 ${tujuan}%0A📅 ${tanggal}%0A⏰ ${jam}%0A📍 Jarak: ${currentJarakAkurat} KM%0A💰 Estimasi: ${formatRupiah(currentHargaAkurat)}${multiplierText}${promoText}`;
+        const waText = currentLanguage === 'id' 
+            ? `Halo Admin, saya ingin order:%0A%0A👤 ${nama}%0A🛠️ ${layanan}${detailGoSend}🛫 ${jemput}%0A🛬 ${tujuan}%0A📅 ${tanggal}%0A⏰ ${jam}%0A📍 Jarak: ${currentJarakAkurat} KM%0A💰 Estimasi: ${formatRupiah(currentHargaAkurat)}${multiplierText}${promoText}`
+            : `Hello Admin, I want to order:%0A%0A👤 ${nama}%0A🛠️ ${layanan}${detailGoSend}🛫 ${jemput}%0A🛬 ${tujuan}%0A📅 ${tanggal}%0A⏰ ${jam}%0A📍 Distance: ${currentJarakAkurat} KM%0A💰 Estimate: ${formatRupiah(currentHargaAkurat)}${multiplierText}${promoText}`;
         
         saveToHistory({ nama, layanan, jemput, tujuan, tanggal, jam });
         currentOrderId = 'ORDER' + Date.now();
@@ -2417,8 +2890,8 @@
         currentOrderStatus = 0;
         updateOrderStatus(0);
         simulateDriverMovement();
-        window.open(`https://wa.me/6281260636666?text=${textWA}`, '_blank');
-        showNotification('Pesanan dikirim!', 'success');
+        window.open(`https://wa.me/6281260636666?text=${waText}`, '_blank');
+        showNotification(currentLanguage === 'id' ? 'Pesanan dikirim!' : 'Order sent!', 'success');
         currentJarakAkurat = 0;
         currentHargaAkurat = 0;
         document.getElementById('liveTracker').style.display = "none";
@@ -2441,6 +2914,7 @@
         loadDashboardData();
     }
     updateCustomerDashboard();
+    updateAllTexts();
     
     const mobileMenuBtn = document.getElementById('mobileMenuBtn');
     const navMenu = document.getElementById('navMenu');
