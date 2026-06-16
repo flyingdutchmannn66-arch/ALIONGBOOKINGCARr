@@ -24,6 +24,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth-compat.js"></script>
+
     <style>
         * {
             margin: 0;
@@ -1858,6 +1863,21 @@
 <button class="emergency-btn" onclick="emergencyCall()"><i class="fa-solid fa-phone"></i></button>
 
 <script>
+    // ================ FIREBASE CONFIG ================
+    const firebaseConfig = {
+        apiKey: "AIzaSyCshXCECE3kphOUMbnmTattSqUhtWMMLso",
+        authDomain: "aliong-d0a18.firebaseapp.com",
+        projectId: "aliong-d0a18",
+        storageBucket: "aliong-d0a18.firebasestorage.app",
+        messagingSenderId: "298150750369",
+        appId: "1:298150750369:web:e4c68a0031a49cb95468e0",
+        measurementId: "G-G6D30NGBNE"
+    };
+
+    // Inisialisasi Firebase
+    firebase.initializeApp(firebaseConfig);
+    const db = firebase.firestore();
+
     // ================ GLOBAL VARIABLES ================
     let deferredPrompt = null;
     let currentLanguage = 'id';
@@ -1880,6 +1900,80 @@
     let userPoints = parseInt(localStorage.getItem('userPoints') || '0');
     let userTotalSaving = parseInt(localStorage.getItem('userTotalSaving') || '0');
     
+    // ================ FIRESTORE FUNCTIONS ================
+    async function saveOrderToFirestore(orderData) {
+        try {
+            const docRef = await db.collection('orders').add({
+                ...orderData,
+                timestamp: firebase.firestore.FieldValue.serverTimestamp(),
+                createdAt: new Date().toISOString()
+            });
+            console.log('Order saved to Firestore with ID:', docRef.id);
+            return docRef.id;
+        } catch (error) {
+            console.error('Error saving order to Firestore:', error);
+            return null;
+        }
+    }
+
+    async function loadOrdersFromFirestore() {
+        try {
+            const snapshot = await db.collection('orders')
+                .orderBy('timestamp', 'desc')
+                .limit(100)
+                .get();
+            
+            const orders = [];
+            snapshot.forEach(doc => {
+                orders.push({ id: doc.id, ...doc.data() });
+            });
+            
+            // Merge with local history
+            if (orders.length > 0) {
+                bookingHistory = orders;
+                localStorage.setItem('bookingHistory', JSON.stringify(bookingHistory));
+                loadHistory();
+                if (isAdmin) loadDashboardData();
+                updateCustomerDashboard();
+            }
+            return orders;
+        } catch (error) {
+            console.error('Error loading orders from Firestore:', error);
+            return [];
+        }
+    }
+
+    async function savePromoToFirestore(promoCode, promoData) {
+        try {
+            await db.collection('promos').doc(promoCode).set({
+                ...promoData,
+                updatedAt: firebase.firestore.FieldValue.serverTimestamp()
+            });
+            console.log('Promo saved to Firestore:', promoCode);
+        } catch (error) {
+            console.error('Error saving promo to Firestore:', error);
+        }
+    }
+
+    async function loadPromosFromFirestore() {
+        try {
+            const snapshot = await db.collection('promos').get();
+            const promos = {};
+            snapshot.forEach(doc => {
+                promos[doc.id] = doc.data();
+            });
+            
+            if (Object.keys(promos).length > 0) {
+                promoDatabase = promos;
+                renderPromoSlider();
+            }
+            return promos;
+        } catch (error) {
+            console.error('Error loading promos from Firestore:', error);
+            return {};
+        }
+    }
+
     // ================ TRANSLATION DATABASE ================
     const translations = {
         id: {
@@ -2659,14 +2753,34 @@
             if (promoDatabase[appliedPromo.code]) {
                 promoDatabase[appliedPromo.code].usedCount++;
                 addSaving(promoDiscount);
+                // Save promo usage to Firestore
+                savePromoToFirestore(appliedPromo.code, promoDatabase[appliedPromo.code]);
             }
             appliedPromo = null;
             removePromo();
         }
         addPoints(finalAmount);
-        const newOrder = { id: Date.now(), ...orderData, timestamp: new Date().toISOString(), distance: currentJarakAkurat, totalAmount: finalAmount, originalAmount: currentHargaAkurat, promoUsed, promoDiscount, rating: currentRating, review: document.getElementById('reviewText').value, images: [] };
+        
+        const newOrder = { 
+            id: Date.now(), 
+            ...orderData, 
+            timestamp: new Date().toISOString(), 
+            distance: currentJarakAkurat, 
+            totalAmount: finalAmount, 
+            originalAmount: currentHargaAkurat, 
+            promoUsed, 
+            promoDiscount, 
+            rating: currentRating, 
+            review: document.getElementById('reviewText').value, 
+            images: [] 
+        };
+        
         bookingHistory.unshift(newOrder);
         localStorage.setItem('bookingHistory', JSON.stringify(bookingHistory));
+        
+        // Save to Firestore
+        saveOrderToFirestore(newOrder);
+        
         loadHistory();
         if (isAdmin) loadDashboardData();
         updateCustomerDashboard();
@@ -2899,23 +3013,42 @@
     });
     
     // ================ INITIALIZATION ================
-    loadFavoriteAddresses();
-    loadHistory();
-    renderPromoSlider();
-    updateDynamicPriceDisplay();
-    document.getElementById('jenisLayanan').addEventListener('change', updateFormLabels);
-    const today = new Date().toISOString().split('T')[0];
-    document.getElementById('tanggalJemput').value = today;
-    if (sessionStorage.getItem('adminSession') === 'true') {
-        isAdmin = true;
-        document.getElementById('dashboardMenuLink').style.display = 'block';
-        document.getElementById('dashboard').style.display = 'block';
-        document.getElementById('promoManageBtn').style.display = 'inline-flex';
-        loadDashboardData();
+    // Load data from Firestore
+    async function initApp() {
+        try {
+            // Load orders from Firestore
+            await loadOrdersFromFirestore();
+            // Load promos from Firestore
+            await loadPromosFromFirestore();
+        } catch (error) {
+            console.error('Error initializing app:', error);
+            // Fallback to local data
+            loadHistory();
+            renderPromoSlider();
+        }
+        
+        loadFavoriteAddresses();
+        updateDynamicPriceDisplay();
+        updateCustomerDashboard();
+        updateAllTexts();
+        
+        document.getElementById('jenisLayanan').addEventListener('change', updateFormLabels);
+        const today = new Date().toISOString().split('T')[0];
+        document.getElementById('tanggalJemput').value = today;
+        
+        if (sessionStorage.getItem('adminSession') === 'true') {
+            isAdmin = true;
+            document.getElementById('dashboardMenuLink').style.display = 'block';
+            document.getElementById('dashboard').style.display = 'block';
+            document.getElementById('promoManageBtn').style.display = 'inline-flex';
+            loadDashboardData();
+        }
     }
-    updateCustomerDashboard();
-    updateAllTexts();
     
+    // Start the app
+    initApp();
+    
+    // Mobile menu toggle
     const mobileMenuBtn = document.getElementById('mobileMenuBtn');
     const navMenu = document.getElementById('navMenu');
     if (mobileMenuBtn) {
@@ -2925,6 +3058,7 @@
         });
     }
     
+    // Expose functions to global scope
     window.openContactModal = () => document.getElementById('contactModal').classList.add('active');
     window.closeContactModal = () => document.getElementById('contactModal').classList.remove('active');
     window.setManualDistance = setManualDistance;
